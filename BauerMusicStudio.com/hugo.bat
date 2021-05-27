@@ -1,0 +1,1 @@
+c:\hugo\bin\hugo.exe server -D

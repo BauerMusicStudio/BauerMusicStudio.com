@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "BauerMusicStudio.com"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Visual Studio Light",
+		"workbench.editor.highlightModifiedTabs": true,
+		"workbench.tree.indent": 16,
+		"workbench.editor.showIcons": false,
+		"workbench.statusBar.feedback.visible": false,
+		"workbench.colorCustomizations": {
+			"editor.selectionHighlightBackground": "#F6B94D"
+		},
+		"workbench.sideBar.location": "right"
+	}
+}

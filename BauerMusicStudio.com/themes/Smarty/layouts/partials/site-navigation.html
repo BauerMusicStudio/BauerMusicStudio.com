@@ -1,0 +1,11 @@
+      {{ if .Site.Menus.main }}
+        <ul class="navbar-nav fs--14">
+          {{ range .Site.Menus.main }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL }}" title="{{ .Name }} page">
+              {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      {{ end }}

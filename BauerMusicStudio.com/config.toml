@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Bauer Music Studio"
-theme = "ananke"
+theme = "Smarty"
 
 [menu]
 
@@ -9,20 +9,20 @@ theme = "ananke"
     identifier = "Home"
     name = "Home"
     url = "/"
-    weight = -110
+    weight = 10
 
   [[menu.main]]
     name = "How I Teach"
     url = "/howIteach/"
-    weight = -100
+    weight = 20
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about"
-    weight = -110
+    weight = 30
 
   [[menu.main]]
     name = "Contact"
     url = "/contact"
-    weight = -100
+    weight = 40

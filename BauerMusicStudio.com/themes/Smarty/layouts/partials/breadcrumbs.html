@@ -1,0 +1,17 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb fs--14">
+
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    {{ $lastUrlElement := index (last 1 (split (delimit (split .URL "/") "," "") ",")) 0 }}
+    {{ range (split .URL "/") }}
+        {{ if gt (len . ) 0 }}
+        {{ if eq $lastUrlElement . }} 
+        <li class="breadcrumb-item active">{{ humanize (replace . "posts" "blog") }}</li>
+        {{ else}}
+        <li class="breadcrumb-item"><a href="/{{ . }}">{{ humanize (replace . "posts" "blog") }}</a></li>
+        {{end}}
+        {{ end }}
+    {{ end }}
+  </ol>
+
+  </nav>

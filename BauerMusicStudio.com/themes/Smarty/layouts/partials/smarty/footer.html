@@ -7,13 +7,11 @@
             <div class="col-12 col-md-6 col-lg-4 text-center-xs p-0 py-5 px-3">
 
                 <!-- logo -->
-                <span class="h--70 mt--n20 d-inline-flex align-items-center">
-                    <img src="/assets/images/logo/logo_light.svg" width="110" height="70" alt="...">
-                </span>
+               
 
                 <p class="lead">
-                    Coming together is a beginning; keeping together is progress; working together is success. 
-                    – <i>Henry Ford</i>
+                    The future belongs to those who believe in the beauty of their dreams
+                    – <i>Eleanor Roosevelt </i>
                 </p>
 
                 <div class="mt-4"> 
@@ -22,13 +20,10 @@
                         <i class="fi fi-social-facebook"></i> 
                     </a>
 
-                    <a href="#!" class="btn btn-sm btn-twitter transition-hover-top mb-2 rounded-circle" rel="noopener" aria-label="twitter page">
-                        <i class="fi fi-social-twitter"></i> 
+                    <a href="#!" class="btn btn-sm btn-instagram transition-hover-top mb-2 rounded-circle" rel="noopener" aria-label="instagram page">
+                        <i class="fi fi-social-instagram"></i> 
                     </a>
 
-                    <a href="#!" class="btn btn-sm btn-linkedin transition-hover-top mb-2 rounded-circle" rel="noopener" aria-label="linkedin page">
-                        <i class="fi fi-social-linkedin"></i> 
-                    </a>
 
                     <a href="#!" class="btn btn-sm btn-youtube transition-hover-top mb-2 rounded-circle" rel="noopener" aria-label="youtube page">
                         <i class="fi fi-social-youtube"></i> 
@@ -75,24 +70,18 @@
 
             <div class="col-12 col-md-6 col-lg-3 py-5 text-center-xs">
 
-                <h4 class="h5">Contact</h4>
+                <h4 class="h5">Contact Me</h4>
 
                 <div class="mt-4">
 
                     <ul class="list-unstyled m-0">
 
-                        <li class="list-item py-2">
-
-                            <a href="tel:+01-555-5555" class="clearfix py-1 h3 mb-0 d-inline-block font-weight-medium text-info">
-                                <i class="float-start fi fi-phone h4"></i> 785-388-9450
-                            </a>
-
-                        </li>
+          
 
                         <li class="list-item py-2">
 
-                            <a href="mailto:info@mycomany.com" class="clearfix py-1 h5 d-inline-block font-weight-medium text-warning">
-                                <i class="float-start fi fi-envelope h4 mt--n5"></i> info@mycomany.com
+                            <a href="mailto:Randy@BauerMusicStudio.com" class="clearfix py-1 h5 d-inline-block font-weight-small text-warning">
+                                <i class="float-start fi fi-envelope h4 mt--n5"></i> Randy@BauerMusicStudio.com
                             </a>
 
                         </li>
@@ -100,7 +89,7 @@
                     </ul>
 
                     <p>
-                        If you have questions, or you want more information, our team is available for you 24/24.
+                        Now accepting students. Schedule your first trial lesson free today! 
                     </p>
 
                 </div>
@@ -118,35 +107,10 @@
         <div class="container clearfix font-weight-light text-center-xs">
 
             <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
-                © My Company Inc.
+                    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
+
             </div>
 
-            <ul class="list-inline mb-0 mt-2 float-end float-none-xs m-0-xs"> 
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/visa.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="visa credit card icon">
-                </li> 
-
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/mastercard.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="mastercard credit card icon">
-                </li> 
-
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/discover.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="discover credit card icon">
-                </li>
-
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/amazon.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="amazon credit card icon">
-                </li>
-                
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/paypal.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="paypal credit card icon">
-                </li>
-
-                <li class="list-inline-item m-0"> 
-                    <img width="38" height="24" class="lazy" data-src="/assets/images/credit_card/skrill.svg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="skrill credit card icon">
-                </li>
-
-                <!-- more vendors on assets/images/credit_card/ -->
 
             </ul>
 

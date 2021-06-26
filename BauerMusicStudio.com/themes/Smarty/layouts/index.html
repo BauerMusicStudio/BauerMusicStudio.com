@@ -310,3 +310,8 @@
 
 
 {{ end }}
+{{ define "devInfo" }}
+	{{ if eq .Site.Params.showtemplateinfo "true" }}
+		{{ partial "templateInfo"  (dict "Which" .Kind "Template" "layouts/index.html") }}
+	{{ end }}
+{{ end }}

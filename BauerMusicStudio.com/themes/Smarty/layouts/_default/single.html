@@ -66,3 +66,9 @@
 
   <h1>default/single</h1>
 {{ end }}
+
+{{ define "devInfo" }}
+	{{ if eq .Site.Params.showtemplateinfo "true" }}
+		{{ partial "templateInfo"  (dict "Which" .Kind "Template" "layouts/_default/single.html") }}
+	{{ end }}
+{{ end }}

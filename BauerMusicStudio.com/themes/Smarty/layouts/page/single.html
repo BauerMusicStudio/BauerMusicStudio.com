@@ -2,18 +2,14 @@
 {{ define "main" }}
 <section class="bg-light p-0">
   <div class="container py-5">
-    <h1 class="h3">
-      {{.Title}}
-    </h1>
+   
     {{ partial "smarty/breadcrumbs.html" . }}
   </div>
 </section>
-  
   {{ .Content }}
-    
 {{ end }}
 {{ define "devInfo" }}
-	{{ if eq .Site.Params.showtemplateinfo "true" }}
+	{{ if eq .Site.Params.showtemplateinfo "false" }}
 		{{ partial "templateInfo"  (dict "Which" .Kind "Template" "layouts/page/single.html") }}
 	{{ end }}
 {{ end }}

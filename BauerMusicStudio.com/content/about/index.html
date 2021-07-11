@@ -5,50 +5,53 @@ draft: true
 description: "description?"
 img: ......
 ---
-<!-- COVER -->
-<section class="p-0 min-h-75vh bg-gradient-dark text-align-start">
+  <div class="container">
 
-  <div class="row m-0">
-    <div class="col-12 col-md-6 min-h-75vh jarallax overlay-dark overlay-opacity-1 text-white">
-      
-      <!-- jarallax image -->
-      <img class="jarallax-img" src="/images/currentimages/RandyatITGblackandwhite.jpg" alt="Randy playing at ITG">
+    <!-- 
+      SWIPER 
 
-      <!-- lines, looks like through a glass -->
-      <div class="absolute-full w-100 overflow-hidden opacity-6">
-        <img class="img-fluid" width="1000" height="1000" src="/assets/images/masks/shape-line-lense.svg" alt="...">
-      </div>
+      Buttons position:
+        .swiper-btn-group-start
+        .swiper-btn-group-end
 
-    </div>
+      Replace h-100vh  with  h-75vh
+      For non-fullheight
 
-    <div class="col-12 col-md-6 d-middle">
+    -->
+    <section class="swiper-container swiper-btn-group swiper-btn-group-end text-white p-0 h-75vh overflow-hidden swiper-container-fade swiper-container-initialized swiper-container-horizontal js-swiperified" data-swiper="{
+        &quot;slidesPerView&quot;: 1,
+        &quot;spaceBetween&quot;: 0,
+        &quot;autoplay&quot;: { &quot;delay&quot; : 4500, &quot;disableOnInteraction&quot;: false },
+        &quot;loop&quot;: true,
+        &quot;effect&quot;: &quot;fade&quot;,
+        &quot;pagination&quot;: { &quot;type&quot;: &quot;bullets&quot; }
+      }" id="rand_t51">
 
-      <div class="mx-3 my-5 z-index-1" data-aos="fade-in" data-aos-delay="200">
-        
-        <h1 class="h2-xs font-weight-medium mb-0">
-          Randy Bauer
-        </h1>
-        
-        <p class="h4 h6-xs font-weight-light mb-4">
-           Trumpet Player & Teacher Extraordinaire
-        </p>
+      <div class="swiper-wrapper h-100" id="swiper-wrapper-856ee561078459038" aria-live="off" style="transition-duration: 0ms;"><div class="lazy h-100 swiper-slide d-middle bg-white overlay-dark overlay-opacity-1 bg-cover rounded-xl overflow-hidden swiper-slide-duplicate swiper-slide-duplicate-next" style="background-image: url(&quot;demo.files/images/unsplash/portfolio/boxed-water-is-better-CYEgCGYm2JY-unsplash-min.jpg&quot;); width: 690px; transition-duration: 0ms; opacity: 1; transform: translate3d(0px, 0px, 0px);" data-swiper-slide-index="2" role="group" aria-label="1 / 5"></div>
 
-        <p class="lead max-w-600">
-          In the last three years, I've transitioned from being awesome at trumpet to an even more awesome at trumpet.
-        </p>
-      </div>
+        <!-- slide -->
+        <div class="lazy h-100 swiper-slide d-middle bg-white overlay-dark overlay-opacity-1 bg-cover rounded-xl overflow-hidden swiper-slide-prev" style="background-image: static/images/currentimages/randyatITGblackandwhite; width: 1170px; transition-duration: 0ms; opacity: 1; transform: translate3d(-690px, 0px, 0px);" data-loaded="true" data-swiper-slide-index="0" role="group" aria-label="2 / 5"></div>
 
-      <!-- svg shape -->
-      <svg class="absolute-full z-index-0" width="100%" height="50%" viewBox="0 0 1920 90" preserveAspectRatio="none">
-        <path fill="rgba(255,255,255,.02)" d="M1920,0C1217,0,120.574,155.567,0,0v90h1920V0z"></path>
-      </svg>
+        <!-- slide -->
+        <div class="lazy h-100 swiper-slide d-middle bg-white overlay-dark overlay-opacity-1 bg-cover rounded-xl overflow-hidden swiper-slide-active" style="background-image: static/images/currentimages/randyatITGblackandwhite; width: 1170px; transition-duration: 0ms; opacity: 1; transform: translate3d(-1380px, 0px, 0px);" data-swiper-slide-index="1" role="group" aria-label="3 / 5" data-loaded="true"></div>
 
-    </div>
+        <!-- slide -->
+        <div class="lazy h-100 swiper-slide d-middle bg-white overlay-dark overlay-opacity-1 bg-cover rounded-xl overflow-hidden swiper-slide-next" style="background-image: static/images/currentimages/randyatITGblackandwhite; width: 1170px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2070px, 0px, 0px);" data-swiper-slide-index="2" role="group" aria-label="4 / 5" data-loaded="true"></div>
+
+      <div class="lazy h-100 swiper-slide d-middle bg-white overlay-dark overlay-opacity-1 bg-cover rounded-xl overflow-hidden swiper-slide-duplicate swiper-slide-duplicate-prev" style="background-image: url(&quot;demo.files/images/unsplash/portfolio/boxed-water-is-better-na5pGXdsMOU-unsplash-min.jpg&quot;); width: 690px; transition-duration: 0ms; opacity: 0; transform: translate3d(-2760px, 0px, 0px);" data-loaded="true" data-swiper-slide-index="0" role="group" aria-label="5 / 5"></div></div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white swiper-button-next-rand_tl1" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-856ee561078459038"></div>
+      <div class="swiper-button-prev swiper-button-white swiper-button-prev-rand_tl1" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-856ee561078459038"></div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination swiper-pagination-rand_tl1 swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" tabindex="0" role="button" aria-label="Go to slide 1" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" tabindex="0" role="button" aria-label="Go to slide 2" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" tabindex="0" role="button" aria-label="Go to slide 3" style="left: 0px;"></span></div>
+
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></section>	
+    <!-- /SWIPER -->
 
   </div>
-
 </section>
-<!-- /COVER -->
 
 <!-- BLOCK -->
 <section>
@@ -158,9 +161,6 @@ img: ......
   </div>
 </section>	
 <!-- /BLOCK -->
-
-
-
 
 <!-- PORTFOLIO -->
 <section class="bg-light">

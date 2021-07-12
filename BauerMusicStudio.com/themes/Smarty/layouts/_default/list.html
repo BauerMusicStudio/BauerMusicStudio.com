@@ -3,3 +3,9 @@
 {{ partial "smarty/breadcrumbs.html" . }}
 
 {{ end }}
+
+{{ define "devInfo" }}
+	{{ if eq .Site.Params.showtemplateinfo "true" }}
+		{{ partial "templateInfo"  (dict "Which" .Kind "Template" "layouts/_default/list.html") }}
+	{{ end }}
+{{ end }}

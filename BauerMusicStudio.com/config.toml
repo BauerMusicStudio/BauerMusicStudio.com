@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "Bauer Music Studio"
 theme = "Smarty"
 
+[params]
+showtemplateinfo = "true"
+
 [menu]
 
   [[menu.main]]

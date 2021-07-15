@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"workbench.colorTheme": "Visual Studio Light",
+		"workbench.colorTheme": "Default Dark+",
 		"workbench.editor.highlightModifiedTabs": true,
 		"workbench.tree.indent": 16,
 		"workbench.editor.showIcons": false,

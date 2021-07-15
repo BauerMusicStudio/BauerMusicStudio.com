@@ -1,1 +1,1 @@
-c:\hugo\bin\hugo.exe server -D
+c:\hugo\bin-0.85.0\hugo.exe server -D

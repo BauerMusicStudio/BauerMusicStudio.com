@@ -15,8 +15,9 @@ showtemplateinfo = "true"
     weight = 10
 
   [[menu.main]]
-    name = "How I Teach"
-    url = "/howIteach/"
+    identifer = "Method and Pricing"
+    name = "Method and Pricing"
+    url = "/methodandpricing/"
     weight = 20
 
   [[menu.main]]

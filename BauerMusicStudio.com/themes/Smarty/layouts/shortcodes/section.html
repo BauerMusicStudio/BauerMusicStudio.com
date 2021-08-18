@@ -1,0 +1,11 @@
+    {{/*  <h1>{{ with .Get "resource" }} class="{{ . }}"{{ end }}</h1>  */}}
+    {{/*  {{ .Page.Params.description }}*/}}
+    {{/*  {{ .Inner | markdownify }} */}}
+    {{/*  {{ .Title }} */}}
+
+      {{ $resource :=  .Get "resource" }}
+      {{ with .Page.Resources.GetMatch  $resource }}
+      {{ .Content }}      
+      {{ end }}
+
+

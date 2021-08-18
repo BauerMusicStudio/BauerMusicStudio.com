@@ -15,7 +15,13 @@
         <!-- preloading icon font is helping to speed up a little bit -->
         <link rel="preload" href="/assets/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
 
-        <link rel="stylesheet" href="/assets/css/core.min.css">
+
+		{{ $sass := resources.Get "scss/main.scss" }}
+		{{ $options := (dict "targetPath" "assets/css/core.css" "outputStyle" "compressed" "enableSourceMap" true ) }}
+		{{ $style := $sass | resources.ToCSS $options | resources.Fingerprint }}
+		<link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+        <!-- <link rel="stylesheet" href="/assets/css/core.css"> -->
         <link rel="stylesheet" href="/assets/css/vendor_bundle.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
 

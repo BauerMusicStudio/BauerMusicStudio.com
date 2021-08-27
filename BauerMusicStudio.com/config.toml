@@ -2,6 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Bauer Music Studio"
 theme = "Smarty"
+cleanDestinationDir = true
 
 [params]
 showtemplateinfo = "true"

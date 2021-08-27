@@ -8,44 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 20 May 2021 16:28:52 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>http://example.org/about/</link>
-      <pubDate>Thu, 20 May 2021 16:28:52 -0600</pubDate>
-      
-      <guid>http://example.org/about/</guid>
-      <description>About MeMy name is Randy Bauer, I&#39;m an Idaho native born and raised in Caldwell. At 11 years old I started learning to play the trumpet; I&#39;ve now been playing the trumpet for 15 years. My experience as a young trumpet player was difficult because my embouchure and fundementals were poorly established. No matter how many hours I practiced, I played with pain in my embourchure and struggled to perform.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>http://example.org/contact/</link>
-      <pubDate>Thu, 20 May 2021 16:28:52 -0600</pubDate>
-      
-      <guid>http://example.org/contact/</guid>
-      <description>Bauer Music Studio Contact!Let&#39;s get startedMy Contact InformationRandy@BauerMusicStudio.com(208)-250-5234Studio LocationsDunkley School of Music3410 N Eagle Rd, Meridian, ID 83646Idaho Music Academy1505 S Tyrell Ln, Boise, ID 83706Dunkley Music 3410 N Eagle Rd Meridian, Idaho 83646
-(208)-342-5549&#34;},{ &#34;map_lat&#34;: 43.59464697532402, &#34;map_long&#34;: -116.17984787259282,&#34;map_popup&#34;: &#34;Idaho Music Academy 1505 Tyrell Ln Boise, Idaho 83706
-(208)-703-8702&#34;}]&#39;Send Me a Message Please, complete all required fields!</description>
-    </item>
-    
-    <item>
-      <title>Method and Pricing</title>
-      <link>http://example.org/methodandpricing/</link>
-      <pubDate>Thu, 20 May 2021 16:28:52 -0600</pubDate>
-      
-      <guid>http://example.org/methodandpricing/</guid>
-      <description>LESSONSWelcome to Bauer Music Studio, trumpet lessons!Investing in personal growth as a musician is an imporant step, taking trumpet lessons from me is having a personal trainer guide you through fundemental trumpet skills. In lessons we will focus on creating a personalized practice routine to help you reach your performance goals. Schedule a Free Trail LessonMusicianshipFostering personal growth as a musician outside of an ensemble.</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>http://example.org/posts/my-first-post-copy-10/</link>
-      <pubDate>Thu, 20 May 2021 16:28:52 -0600</pubDate>
-      
-      <guid>http://example.org/posts/my-first-post-copy-10/</guid>
-      <description>Hello World!</description>
-    </item>
-    
-    <item>
       <title>My First Post</title>
       <link>http://example.org/posts/my-first-post-copy/</link>
       <pubDate>Thu, 20 May 2021 16:28:52 -0600</pubDate>

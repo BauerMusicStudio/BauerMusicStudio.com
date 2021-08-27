@@ -1,1 +1,1 @@
-c:\hugo\bin-extended-0.85.0\hugo.exe -D
+c:\hugo\bin-extended-0.85.0\hugo.exe

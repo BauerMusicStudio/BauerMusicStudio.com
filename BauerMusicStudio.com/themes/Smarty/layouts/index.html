@@ -1,4 +1,9 @@
 {{ define "main" }}
+	{{ $homepage := .Site.GetPage "/home" }}
+	{{ with $homepage }}
+	{{ .Content }}
+	{{ end }}
+
 	{{ .Content }}
 {{ end }}
 

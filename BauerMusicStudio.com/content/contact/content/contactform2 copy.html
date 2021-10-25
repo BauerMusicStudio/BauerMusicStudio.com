@@ -1,0 +1,545 @@
++++
+Title = "Contact Us"
++++
+<!-- Blog Single Item Blocks -->
+<style type="text/css">
+    .heartbeat {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+
+    @-webkit-keyframes heartbeat {
+        from {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+
+        10% {
+            -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        17% {
+            -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+
+        33% {
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        45% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+
+    @keyframes heartbeat {
+        from {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+
+        10% {
+            -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        17% {
+            -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+
+        33% {
+            -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+            -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+        }
+
+        45% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+        }
+    }
+</style>
+
+
+
+<section>
+    <div class="rounded bg-white shadow-xs d-flex">
+        <div class="m-5 m-4-xs">
+
+            <h2 class="h3-xs font-weight-light mb-5">
+                Send me a message
+            </h2>
+
+
+            <!-- 
+          CONTACT FORM : AJAX [TESTED|WORKING AS IT IS]
+  
+            Plugin required: SOW Ajax Forms
+  
+            In order to work as ajax form, SOW Ajax Forms should be available/enabled
+            Else, SOW Form Validation plugin is used.
+            If none of them are available, normal submit is used and you can remove:
+              .js-ajax
+              .bs-validate
+              novalidate
+              any data-ajax-*
+              any data-error-*
+  
+            ** Remove data-error-toast-* for no error toast notifications
+  
+  
+  
+  
+          Ajax will control success/fail alerts according to server response:
+            
+            1. unexpected error: 		if server response is this string: {:err:unexpected:}
+            2. mising mandatory:		if server response is this string: {:err:required:}
+            3. success:					if server response is this string: {:success:}
+            
+            data-ajax-control-alerts="true"
+            data-ajax-control-alert-succes="#contactSuccess" 
+            data-ajax-control-alert-unexpected="#contactErrorUnexpected" 
+            data-ajax-control-alert-mandaroty="#contactErrorMandatory" 
+  
+          +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+            WORKING CONTACT! Edit your php/config.inc.php
+          +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        -->
+        
+            <form id="contactForm" novalidate 
+                action="https://formspree.io/f/mvovjwye" 
+                method="POST"
+                data-ajax-container="#ajax_dd_contact_response_container" 
+                data-ajax-update-url="false"
+                data-ajax-show-loading-icon="true" data-ajax-callback-function="" data-error-scroll-up="false"
+                data-ajax-control-alerts="true" data-ajax-control-alert-succes="#contactSuccess"
+                data-ajax-control-alert-unexpected="#contactErrorUnexpected"
+                data-ajax-control-alert-mandaroty="#contactErrorMandatory"
+                data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Please, complete all required fields!"
+                data-error-toast-delay="2000" data-error-toast-position="bottom-center" class="bs-validate js-ajax">
+
+
+                <!-- 1. 
+            optional, hidden action for your backend
+  
+            PHP Basic Example
+            if($_POST['action'] == 'contact_form_submit') {
+              ... send message
+            }
+          -->
+                <input type="hidden" name="action" value="contact_form_submit" tabindex="-1">
+                <!-- -->
+
+
+                <!-- 2. 
+            A very small optional trick (using .hide class instead of type="hidden") for some low spam robots. 
+            If this is not empty, the process should stop. A normal user/visitor should not be able to see this field.
+  
+            PHP Basic Example
+            if($_POST['norobot'] != '') {
+              exit;
+            }
+          -->
+                <input type="text" name="norobot" value="" class="hide" tabindex="-1">
+                <!-- -->
+
+                <div class="form-label-group mb-3">
+                    <input required placeholder="Name" id="contact_name" name="contact_name" type="text"
+                        class="form-control">
+                    <label for="contact_name">Name</label>
+                </div>
+
+                <div class="form-label-group mb-3">
+                    <input required placeholder="Email" id="contact_email" name="contact_email" type="email"
+                        class="form-control">
+                    <label for="contact_email">Email</label>
+                </div>
+
+                <div class="form-label-group mb-3">
+                    <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text"
+                        class="form-control">
+                    <label for="contact_phone">Phone</label>
+                </div>
+
+                <div class="form-label-group mb-4">
+                    <textarea required placeholder="Message" id="contact_message" name="contact_message"
+                        class="form-control" rows="3"></textarea>
+                    <label for="contact_message">Message</label>
+                </div>
+
+                <!-- GDPR CONSENT -->
+                <div class="clearfix bg-light position-relative rounded p-4 mb-4">
+
+                    <span class="text-muted fs--12 d-block position-absolute bottom-0 end-0 m-2">
+                        EU GDPR
+                    </span>
+
+                    <label class="form-checkbox form-checkbox-primary">
+                        <input required type="checkbox" name="contact_gdpr">
+                        <i></i>
+                        <span>
+                            I consent that my data is being stored in
+                            line with the guidelines set out in
+                            <a href="page-terms-and-conditions.html" target="_blank">Privacy Policy</a>.
+                        </span>
+                    </label>
+
+                </div>
+                <!-- /GDPR CONSENT -->
+
+
+
+
+                <!-- 
+            Server detailed error
+            !ONLY! If debug is enabled!
+            Else, shown ony "Server Error!"
+          -->
+                <div id="ajax_dd_contact_response_container"></div>
+
+                <!-- {:err:unexpected:} internal server error -->
+                <div id="contactErrorUnexpected" class="hide alert alert-danger p-3">
+                    Unexpected Error!
+                </div>
+
+                <!-- {:err:required:} mandatory fields -->
+                <div id="contactErrorMandatory" class="hide alert alert-danger p-3">
+                    Please, review your data and try again!
+                </div>
+
+                <!-- {:success:} message sent -->
+                <div id="contactSuccess" class="hide alert alert-success p-3">
+                    Thank you for your message!
+                </div>
+
+
+
+
+                <button id="contactButton" type="submit" class="btn btn-primary btn-block">
+                    Send Message
+                </button>
+
+            </form>
+</section>
+
+
+
+
+
+<section class="container g-py-30">
+    <div id="contactPageHeading" class="row g-mb-20">
+        <div class="col-lg-6 g-mb-30">
+            <!-- Heading -->
+            <h2 class="h1 g-color-black g-font-weight-600 mb-4">How can we assist you?</h2>
+           
+        </div>
+
+        <div class="col-lg-3 align-self-end ml-auto g-mb-50">
+            <div class="media">
+                <div class="d-flex align-self-center">
+                    <span class="u-icon-v2 u-icon-size--sm g-color-white g-bg-primary rounded-circle mr-3">
+                        <i class="g-font-size-16 fa fa-envelope-o"></i>
+                    </span>
+                </div>
+                <div class="media-body align-self-center">
+                    <h3 class="h6 g-color-black g-font-weight-700 text-uppercase mb-0">Email Address</h3>
+                    <p class="mb-0">info@bestdayhr.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-md-12">
+            <form id="contactForm" validate="validate">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="row">
+                            <div class="col-md-6 form-group g-mb-20">
+                                <label class="g-color-gray-dark-v2 g-font-size-13">First name</label>
+                                <input name="FirstName" required
+                                    class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+                                    type="text" placeholder="">
+                            </div>
+
+                            <div class="col-md-6 form-group g-mb-20">
+                                <label class="g-color-gray-dark-v2 g-font-size-13">Last name</label>
+                                <input name="LastName" required
+                                    class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+                                    type="text" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Your email</label>
+                            <input name="Email" required
+                                class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+                                type="email" placeholder="">
+                        </div>
+
+                        <div class="g-mb-20">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Phone number</label>
+                            <input name="PhoneNumber"
+                                class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-primary--focus rounded-3 g-py-13 g-px-15"
+                                type="tel" placeholder="">
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="col-md-7">
+                        <div class="g-mb-40">
+                            <label class="g-color-gray-dark-v2 g-font-size-13">Your message</label>
+                            <textarea name="Message" required
+                                class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-primary--focus g-resize-none rounded-3 g-py-13 g-px-15"
+                                rows="12"></textarea>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-12 text-align-bottom">
+                        <input type="hidden" name="recaptcha" data-rule-recaptcha="true">
+                        <div class="g-recaptcha" data-sitekey="6LfRQVkaAAAAACN1LsKNtGi-_M_GvTP5TeTfQEmt"></div>
+                        <button id="contactButton"
+                            class="btn u-btn-primary g-font-weight-600 g-font-size-13 text-uppercase rounded-3 g-py-12 g-px-35"
+                            role="button">Send</button>
+                        <button id="clearButton" class="btn  u-btn-outline-red " role="button">Reset</button>
+                    </div>
+                </div>
+
+            </form>
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Modal -->
+<div class="modal fade hide" id="pleaseWaitDialog" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img style="height:32px;" src="/images/logoFull/Logo_BestDayHR_4 STANDARD NAME PLAIN small.png"
+                    alt="BestDayHR Logo">
+
+            </div>
+            <div class="modal-body">
+                <!-- <img style="height:32px;" src="/images/logoFull/Logo_BestDayHR_4 STANDARD NAME PLAIN small.png" alt="BestDayHR Logo">   !-->
+                <!-- Border Primary Blockquotes -->
+
+                <!-- End Border Primary Blockquotes -->
+
+                <div id="contactFormStatus">
+                    <blockquote id="contactQuote" class="blockquote g-brd-2 g-brd-primary g-font-size-16 g-mb-30">
+                        <p>
+                            Too often we underestimate the power of a touch, a smile, a kind word, a listening ear, an
+                            honest compliment, or the smallest act of caring, all of which have the potential to turn a
+                            life around.
+                        </p>
+                        <footer class="blockquote-footer"> <cite title="Source Title">Leo Buscaglia</cite>
+                        </footer>
+                    </blockquote>
+                    <div id="contactFormStatusMessage">
+
+                    </div>
+                    <!-- End Heading -->
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div id="modal-loader">
+                    One moment ...
+                    <img class="heartbeat" src="/images/flaticon/heart_32.png" alt="BestDayHR Heart">
+                </div>
+                <button id="modal-next" type="button" style="display: none;" class="btn btn-primary">Next</button>
+                <button id="modal-close" type="button" style="display: none;" class="btn btn-primary"
+                    data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script at="Foot" type="text/javascript">
+    var CurrentPage = (function () {
+        var currentForm;
+        var currElement;
+        var formSubmitButtonClicked = false;
+        var sendButton;
+        var status;
+        var statusMessage;
+        var modalLoader;
+        var modalClose;
+        var modalNext;
+        var ajaxStatus;
+        var clearButton;
+        var contactQuote;
+
+        function initialize() {
+            currentForm = $("#contactForm");
+            sendButton = $("#contactButton");
+            status = $("#contactFormStatus");
+            statusMessage = $("#contactFormStatusMessage");
+            contactPageHeading = $("#contactPageHeading");
+            modalLoader = $("#modal-loader");
+            modalClose = $("#modal-close");
+            modalNext = $("#modal-next");
+            clearButton = $("#clearButton");
+            contactQuote = $("#contactQuote");
+            currentForm.validate({
+                ignore: '.no-validation',
+
+            });
+            clearButton.off().on("click", clearForm);
+            sendButton.off().on("click", submitForm);
+            modalNext.off().on("click", nextStep);
+            $('body').on('hidden.bs.modal', '.modal', function () {
+                modalClose.hide();
+                modalLoader.show();
+                contactQuote.show();
+                statusMessage.html("");
+
+            });
+            // Add our validation method for reCaptcha: 
+            $.validator.addMethod("recaptcha", function (value, element) {
+                var grecaptcha = window.grecaptcha || null;
+                return !grecaptcha || grecaptcha.getResponse();
+            }, "Please tell us that you're not a robot. :)");
+
+            formSubmitButtonClicked = false;
+            ajaxStatus = "";
+        }
+        function clearValidation(formElement) {
+            //Internal $.validator is exposed through $(form).validate()
+            var validator = $(formElement).validate();
+            //Iterate through named elements inside of the form, and mark them as error free
+            $('[name]', formElement).each(function () {
+                validator.successList.push(this);//mark as error free
+                validator.showErrors();//remove error messages if present
+            });
+            validator.resetForm();//remove error class on name elements and clear history
+            validator.reset();//remove all error and success data
+        }
+        function clearForm(e) {
+            e.preventDefault();
+            currentForm[0].reset();
+            grecaptcha.reset();
+            clearValidation(currentForm);
+        }
+
+        function showStatusMessage(message) {
+            statusMessage.html(message);
+        }
+
+        function nextStep() {
+            contactQuote.hide();
+            //console.log('hide');
+            modalNext.hide();
+            modalClose.show();
+            if (ajaxStatus === "success") {
+                showStatusMessage('Thank you for contacting us. We will be in touch shortly. In the meantime, we appreciate you reaching out. ');
+                currentForm[0].reset();
+            }
+            else {
+                showStatusMessage('There was a problem sending your inquiry. The message was not sent.');
+
+            }
+            initialize();
+        }
+
+
+        function submitForm(e) {
+            e.preventDefault();
+            if (!currentForm.valid()) return false;
+
+            $('#pleaseWaitDialog').modal({ backdrop: 'static', keyboard: false });
+            var formData = currentForm.serializeArray();
+
+            if (!formSubmitButtonClicked) {
+                formSubmitButtonClicked = true;
+                //console.log("sent");
+                setTimeout(function () {
+
+
+                    $.ajax({
+                        type: "Post",
+                        url: "https://formspree.io/f/mvovjwye", //Dev mwkwzqgl
+                        dataType: "json",
+                        data: formData,
+                        accept: "application/json;",  // must add, so that formspree will respond with json
+                        success: function (data) {
+                            ajaxStatus = "success";
+                        },
+                        error: function () {
+                            ajaxStatus = "error";
+                        },
+                        complete: function () {
+                            grecaptcha.reset();
+                            modalLoader.hide();
+                            modalNext.show();
+                        }
+                    });
+                }, 3500);
+
+
+            }
+            else {
+                //console.log("doubleclick");
+            }
+
+        }
+
+
+        return {
+            Init: initialize
+        }
+    })();
+
+    $(document).ready(function () {
+        CurrentPage.Init();
+
+    });
+
+</script>
+
+
+
+
+<!-- End Icon Blocks -->

@@ -7,36 +7,43 @@
 
 
 <footer id="footer" class="shadow-xs bg-dark">
-    <div class="container" >
-        
-        <div class="row gutters-xs--xs text-white" >
+    <div class="container">
+
+        <div class="row gutters-xs--xs text-white">
 
             <!-- col 1 : contact -->
             <div class="order-3 order-lg-1 col">
 
                 <div class="py-5 px-3 text-center">
-                    <a href="/contact/#Contact" class="clearfix py-1 h5 font-weight-medium text-white">
+                    <a href="/contact/" class="clearfix py-1 h5 font-weight-medium text-white">
                         <h4 class="text-white">Schedule a Lesson</h4>
-                    </a> 
+                    </a>
                     <div class="mb-4">
                         <ul class="list-unstyled mb-0 mt-5 px-3">
                             <li class="list-item py-2">
-                                <a href="mailto:Randy@BauerMusicStudio.com" class="clearfix py-1 h5 d-block font-weight-medium text-white">
-                                   Randy@BauerMusicStudio.com
+                                <a href="mailto:Randy@BauerMusicStudio.com"
+                                    class="clearfix py-1 h5 d-block font-weight-medium text-white">
+                                    Randy@BauerMusicStudio.com
                                 </a>
                             </li>
                         </ul>
                         <h4>Follow Us</h4>
                         <!-- social -->
-                        <div class="clearfix"> 
-                            <a href="#!" class="btn btn-sm btn-facebook transition-hover-top mb-2 rounded-circle text-white" rel="noopener" aria-label="facebook page">
-                                <i class="fi fi-social-facebook"></i> 
+                        <div class="clearfix">
+                            <a href="#!"
+                                class="btn btn-sm btn-facebook transition-hover-top mb-2 rounded-circle text-white"
+                                rel="noopener" aria-label="facebook page">
+                                <i class="fi fi-social-facebook"></i>
                             </a>
-                            <a href="#!" class="btn btn-sm btn-twitter transition-hover-top mb-2 rounded-circle text-white" rel="noopener" aria-label="instagram page">
-                                <i class="fi fi-social-instagram"></i> 
+                            <a href="#!"
+                                class="btn btn-sm btn-twitter transition-hover-top mb-2 rounded-circle text-white"
+                                rel="noopener" aria-label="instagram page">
+                                <i class="fi fi-social-instagram"></i>
                             </a>
-                            <a href="#!" class="btn btn-sm btn-youtube transition-hover-top mb-2 rounded-circle text-white" rel="noopener" aria-label="youtube page">
-                                <i class="fi fi-social-youtube"></i> 
+                            <a href="#!"
+                                class="btn btn-sm btn-youtube transition-hover-top mb-2 rounded-circle text-white"
+                                rel="noopener" aria-label="youtube page">
+                                <i class="fi fi-social-youtube"></i>
                             </a>
                         </div>
                         <!-- /social -->
@@ -46,7 +53,8 @@
 
 
             <!-- MIDDLE : LOGO -->
-            <div class="order-2 col-12 col-lg-4 col-xl-4 mt--n0 m-0-xs m-10-md align-items-center justify-content-center">
+            <div
+                class="order-2 col-12 col-lg-4 col-xl-4 mt--n0 m-0-xs m-10-md align-items-center justify-content-center">
                 <div class=" py-5 px-3 text-center">
                     <!-- logo -->
                     <div class="py-3">
@@ -82,11 +90,11 @@
                         <li class="list-item d-flex border-dashed border-dark-soft bx-0 bt-0 px-1 py-2">
 
                             <div class="w-50">
-                                <i class="fi fi-globe"></i> Online 
+                                <i class="fi fi-globe"></i> Online
                             </div>
 
                             <div class="w-50 text-align-end">
-                                      Everywhere
+                                Everywhere
 
                             </div>
 
@@ -95,26 +103,31 @@
                     </ul>
 
                 </div>
-                
+
 
             </div>
 
         </div>
-        <div class="bg-distinct py-3 clearfix">
 
-            <div class="container clearfix font-weight-light text-center-xs text-white">
-    
+    </div>
+</footer>
+
+<footer id="footer" class="shadow-xs" style="background-color: rgb(28, 31, 31);">
+    <div class="container">
+        <div class="row gutters-xs--xs text-white">
+            <div class="font-weight-light text-black">
+
                 <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
-                        &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
-    
+                    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{
+                    end }}
+
                 </div>
-    
-    
+
+
                 </ul>
-    
+
             </div>
         </div>
-
     </div>
 </footer>
 <!--/ footer-->

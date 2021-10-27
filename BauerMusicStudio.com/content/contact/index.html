@@ -5,22 +5,22 @@ draft: false
 description: "description?"
 ---
 
-
-<section class="overlay-dark overlay-opacity-6 bg-light bg-cover lazy"  data-background-image='{{<   imgprocURL "content/randybauer2021_5.JPG" Resize "1800x"   >}}' ></section>
+<!-- 
+<section class="overlay-dark overlay-opacity-6 bg-light bg-cover lazy"  data-background-image='{{<   imgprocURL "content/randybauer2021_5.JPG" Resize "1800x"   >}}' ></section> -->
 
 <section id="section_contact" class="mt-1 bg-light">
   <div class="container">
     <div class="row">
 
-        <div class="col-md">
-            {{<   section src="content/contactInfo.html"    >}}
-            {{<   section src="content/contactMap.html"   >}}
-        </div>
+      <div class="col-md">
+        {{< section src="content/contactInfo.html">}}
+          {{< section src="content/contactMap.html">}}
+      </div>
 
-        <div class="col-md">
-          {{<   section src="content/contactForm2.html"    >}}
-        </div>
+      <div class="col-md">
+        {{< section src="content/contactForm2.html">}}
+      </div>
 
     </div>
-  </div>  
+  </div>
 </section>

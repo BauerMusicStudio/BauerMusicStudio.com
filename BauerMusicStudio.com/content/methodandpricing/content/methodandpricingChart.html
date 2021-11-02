@@ -4,99 +4,130 @@ description: "Pricing Chart"
 ---
 <a name="PricingChart"></a>
 
+
+
 <section id="section_pricing" class="mt-1 bg-gray-100">
     <div class="container">
 
-        <!-- table start -->
-        <div class="table-responsive">
-            <table class="table table-hover table-align-middle font-weight-medium text-center">
-                <thead>
-                    <tr>
-                        <th class="text-align-start text-muted font-weight-light fs--15">
-                            <span class="d-block pt-5">*Recommended
-                            </span>
-                        </th>
 
-                        <th class="font-weight-medium text-center fs--20 w--180">
-                            <span class="d-block w--180 fs--25 border-solid  border-dark-soft bx-0 bt-0">30
-                                Minute</span>
-                            <div class="h3 d-block text-muted font-weight-light mt-2">
-                                <span class="fs--16">Per Lesson</span>
-                                <span class="font-weight-medium text-center text- fs--20 w--180">
-                                    <span class="d-block w--180 fs--20"></span>
-                                    <span class="fs--16 font-weight-light"></span>
-                            </div>
-                        </th>
+        <!-- mobile swipe info -->
+        <div class="d-block d-md-none position-relative bg-theme-color-light clearfix text-center p-4 text-gray-500">
+            <i class="fi fi-arrow-left-slim float-start"></i>
+            <i class="fi fi-arrow-right-slim float-end"></i>
+            <span class="text-gray-500">
+                swipe for all
+            </span>
+            <i class="arrow arrow-lg arrow-bottom arrow-center border-theme-color-light"></i>
+        </div>
+        <!-- /mobile swipe info -->
 
-                        <th class="font-weight-medium text-center fs--20 w--180">
-                            <span class="d-block w--180 fs--25 border-solid  border-dark-soft bx-0 bt-0">45
-                                Minute</span>
-                            <div class="h3 d-block text-muted font-weight-light mt-2">
-                                <span class="fs--16">Per Lesson</span>
-                                <span class="font-weight-medium text-center text-pink fs--20 w--180">
-                                    <span class="d-block w--180 fs--20"></span>
-                                    <span class="fs--16 font-weight-light"></span>
-                            </div>
-                        </th>
 
-                        <th class="font-weight-medium text-center fs--20 w--180">
-                            <span class="d-block w--180 fs--25 border-solid  border-dark-soft bx-0 bt-0">60
-                                Minute</span>
-                            <div class="h3 d-block text-muted font-weight-light mt-2">
-                                <span class="fs--16">Per Lesson</span>
-                                <span class="font-weight-medium text-center text-pink fs--20 w--180">
-                                    <span class="d-block w--180 fs--20"></span>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr class="font-weight-normal">
-                        <td class="text-align-start">Beginner
-                            <small class="d-block text-muted">Elementry students.</small>
-                        </td>
-                        <td class="bg-pink-soft rounded">$25.00
-                            <small class="font-weight-light fs--15">*
-                        </td>
-                        <td>$35.00&nbsp;</td>
-                        <td>$45.00&nbsp;</td>
-                    </tr>
+        <div class="swiper-container px-5 p-0-xs" data-swiper='{
+                "autoplay": false,
+                "slidesPerView": 3,
+                "spaceBetween": 30,
+                "breakpoints": {
+                    "1200": { "slidesPerView": "3" },
+                    "768": { "slidesPerView": "2" },
+                    "0": 	{ "slidesPerView": "1" }
+                }
+            }'>
+            <div class="swiper-wrapper py-5">
 
-                    <tr class="font-weight-normal">
-                        <td class="text-align-start">Intermediate
-                            <small class="d-block text-muted">Middle school students. </small>
-                        </td>
-                        <td>$30.00&nbsp;</td>
-                        <td class="bg-pink-soft rounded">$40.00
-                            <small class="font-weight-light fs--15">*
-                        </td>
-                        <td>$50.00&nbsp;</td>
-                    </tr>
+                <div class="swiper-slide">
 
-                    <tr class="font-weight-normal">
-                        <td class="text-align-start">
+                    <div class="bg-white rounded-xl p-5 m-4-xs shadow-md text-center">
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
+                            Beginner
+                         </p>
+                        <h3 class="h4 mb-3">
+                            
+                            <span class="fs--30 font-weight-medium ">Elementry Students</span>
+                            
+                        </h3>
+
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-3">
+                           Price Per Lesson
+                        </p>
+
+                        <ul class="list-unstyled mb-5 text text-hover">
+                            <li class="list-item font-weight-light py-3">*Recommended</li>
+                            <li class="list-item py-1 bg-gray-100">*30 Minute - $25.00</li>
+                            <li class="list-item py-1">&nbsp;45 Minute - $35.00</li>
+                            <li class="list-item py-1">&nbsp;60 Minute - $45.00</li>
+                        </ul>
+
+                        <a href="/contact/" class="btn btn-block btn-box btn-outline-secondary">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="bg-white rounded-xl p-5 m-4-xs shadow-md text-center">
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
+                            Intermediate
+                         </p>
+                        <h3 class="h4 mb-3">
+                            
+                            <span class="fs--30 font-weight-medium ">Middle School Students</span>
+                            
+                        </h3>
+
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-3">
+                           Price Per Lesson
+                        </p>
+                        <ul class="list-unstyled mb-5">
+                            <li class="list-item font-weight-light py-3">*Recommended</li>
+                            <li class="list-item py-1">&nbsp;30 Minute - $30.00</li>
+                            <li class="list-item py-1 bg-gray-100">*45 Minute - $40.00</li>
+                            <li class="list-item py-1">&nbsp;60 Minute - $50.00</li>
+                        </ul>
+
+                        <a href="/contact/" class="btn btn-block btn-box btn-danger bg-gradient-pink">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="swiper-slide">
+
+                    <div class="bg-white rounded-xl p-5 m-4-xs shadow-md text-center">
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
                             Advanced
-                            <small class="d-block text-muted">High School students and beyond. </small>
-                        </td>
-                        <td>$35.00&nbsp;</td>
-                        <td>$45.00&nbsp;</td>
-                        <td class="bg-pink-soft rounded">$55.00
-                            <small class="font-weight-light fs--15">*
-                        </td>
-                    </tr>
+                         </p>
+                        <h3 class="h4 mb-3">
+                            
+                            <span class="fs--30 font-weight-medium ">High School and Beyond</span>
+                            
+                        </h3>
 
-                    <tr class="font-weight-normal">
-                        <td class="text-align-start text-muted fs--15"></td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
+                        <p class="badge badge-light badge-box fs--20 font-weight-normal px-3 py-2 mb-3">
+                           Price Per Lesson
+                        </p>
 
-                </tbody>
+                        <ul class="list-unstyled mb-5">
+                            <li class="list-item font-weight-light py-3">*Recommended</li>
+                            <li class="list-item py-1">&nbsp;30 Minute - $35.00</li>
+                            <li class="list-item py-1">&nbsp;45 Minute - $45.00</li>
+                            <li class="list-item py-1 bg-gray-100">*60 Minute - $55.00</li>
+                        </ul>
 
-            </table>
+                        <a href="/contact/" class="btn btn-block btn-box btn-outline-secondary">
+                            Contact Me
+                        </a>
 
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
     </div>

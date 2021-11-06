@@ -108,24 +108,25 @@
         </div>
 
     </div>
-</footer>
-
-<footer id="footer" class="shadow-xs" style="background-color: rgb(28, 31, 31);">
-    <div class="container">
-        <div class="row gutters-xs--xs text-white">
-            <div class="font-weight-light text-black">
-
-                <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
-                    &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{
-                    end }}
-
+    <div class="shadow-xs" style="background-color: rgb(28, 31, 31);">
+        <div class="container">
+            <div class="row gutters-xs--xs text-white">
+                <div class="font-weight-light text-black">
+    
+                    <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
+                        &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{
+                        end }}
+    
+                    </div>
+    
+    
+                   
+    
                 </div>
-
-
-                </ul>
-
             </div>
         </div>
     </div>
 </footer>
+
+
 <!--/ footer-->

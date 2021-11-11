@@ -1,0 +1,100 @@
+// Grace this is where you put the custom colors
+
+// -------------------------------------------------------------------------------------------
+// 					coolors color 
+// 					https://coolors.co/2e2e2e-dbe1e6-2e6bdc-eac435-e40066-da4167-fb4d3d
+// -------------------------------------------------------------------------------------------
+$primary-theme-color:                       #377dff !default;                                       // #377dff - blue, default theme color
+
+// If `$primary-theme-color` is changed, contrast might also need adjustment. Edit these two lines below.
+$yiq-text-dark:                             #212529 !default;                                       // colors, accordong to theme color!
+$yiq-text-light:                            #ffffff !default;                                       // colors, accordong to theme color!
+$blue:        $primary-theme-color !default;       // orig: #007bff (*-primary)
+$red:         #f64e60 !default;                 // orig: #dc3545 (*-danger)
+$yellow:      #fad776 !default;                 // orig: #ffc107 (*-warning)
+$green:       #6dbb30 !default;                 // orig: #28a745 (*-success)
+$cyan:        #73e7f7 !default;                 // orig: #17a2b8 (*-info)
+$indigo:      #533be2 !default;                 // orig: #6610f2 (*-ingido)
+$purple:      #4c2c92 !default;                 // orig: #6f42c1 (*-purple)
+$pink:        #f92084 !default;                 // orig: #e83e8c (*-pink)
+$light:       #f8f9fa !default;                 // orig: $gray-100 (*-light)
+$secondary:   #6c757d !default;                 // orig: $gray-800 (*-secondary)
+$dark:        #000000  !default;  
+$dark-500:   rgb(28, 31, 31) !default;                 // orig: #000000 (*-dark)
+
+$text-muted:  #7e8299 !default;  
+$orange:      rgb(184, 133, 39) !default;
+
+
+// Theme Colors (buttons are also generated from here)
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":      $yellow,
+    "secondary":    $secondary,
+    "success":      $blue,
+    "info":         $cyan,
+    "warning":      $yellow,
+    "danger":       $red,
+    "light":        $light,
+    "dark":         $dark,
+
+    "indigo":       $indigo,
+    "purple":       $purple,
+    "pink":         $pink
+  ),
+  $theme-colors
+);
+
+// MUST be a match for $theme-colors (see above)
+// Is a percent of rgba, sued to soften the colors
+$theme-colors-soft: () !default;
+$theme-colors-soft: map-merge(
+  (
+    "primary":      23%,   //using the $yellow too light, need to adjust.
+    "secondary":    49%,
+    "success":      14%,
+    "info":         15%,
+    "warning":      15%,
+    "danger":       33%,
+    "light":        10%,
+    "dark":         59%,
+
+    "indigo":       40%,
+    "purple":       39%,
+    "pink":         28%
+  ),
+  $theme-colors-soft
+);
+
+
+
+
+//* BRAND COLORS [components/_button.scss] */
+$brand-color-list: () !default;
+$brand-color-list: map-merge((
+
+  "facebook":             #3b5998,
+  "twitter":              #1da1f2,
+  "instagram":            #3f729b,
+  "linkedin":             #007bb6,
+  "vimeo":                #aad450,
+  "youtube":              #bb0000,
+  "email":                #049fb3,
+
+), $brand-color-list);
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+.bg-dark-500{
+
+  background-color: $dark-500;
+}

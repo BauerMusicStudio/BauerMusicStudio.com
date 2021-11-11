@@ -1,0 +1,40 @@
+// any variable you put here, will overwrite Bootstrap and Smarty!
+// It's better to copy/paste here the variables you want to change instead of changing the original,
+// because would be a lot easier on updates! 
+// Grace this is where you put the custom colors
+// -------------------------------------------------------------------------------------------
+// 					DON'T FORGET ON UPDATES TO NEVER REPLACE THIS FOLDER :)
+// 					You might have a backup but who knows... some unsaved changes!
+
+
+// -------------------------------------------------------------------------------------------
+// 					BauerMusicStudio. Original Colors at launch.  10/20/2021
+// -------------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------
+$primary-theme-color:                       #377dff !default;                                       // #377dff - blue, default theme color
+
+// If `$primary-theme-color` is changed, contrast might also need adjustment. Edit these two lines below.
+$yiq-text-dark:                             #212529 !default;                                       // colors, accordong to theme color!
+$yiq-text-light:                            #ffffff !default;                                       // colors, accordong to theme color!
+$body-color:                                #212529 !default;                                       // body color
+$body-bg:                                   #ffffff !default;                                       // body background color
+
+$blue:        $primary-theme-color !default;    // orig: #007bff (*-primary)
+$red:         #f64e60 !default;                 // orig: #dc3545 (*-danger)
+$yellow:      #fad776 !default;                 // orig: #ffc107 (*-warning)
+$green:       #6dbb30 !default;                 // orig: #28a745 (*-success)
+$cyan:        #73e7f7 !default;                 // orig: #17a2b8 (*-info)
+$indigo:      #533be2 !default;                 // orig: #6610f2 (*-ingido)
+$purple:      #4c2c92 !default;                 // orig: #6f42c1 (*-purple)
+$pink:        #f92084 !default;                 // orig: #e83e8c (*-pink)
+$light:       #f8f9fa !default;                 // orig: $gray-100 (*-light)
+$secondary:   #6c757d !default;                 // orig: $gray-800 (*-secondary)
+$dark:        #2E2E2E !default;                 // orig: #000000 (*-dark)
+$dark-500:   rgb(28, 31, 31) !default;                 // orig: #000000 (*-dark)
+$text-muted:  #7e8299 !default;                 // orig: $gray-600
+
+
+.bg-dark-500{
+
+  background-color: $dark-500;
+}

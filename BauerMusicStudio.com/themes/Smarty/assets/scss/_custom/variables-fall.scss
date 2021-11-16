@@ -4,37 +4,40 @@
 // 					coolors color 
 // 					https://coolors.co/2e2e2e-dbe1e6-2e6bdc-eac435-e40066-da4167-fb4d3d
 // -------------------------------------------------------------------------------------------
-$primary-theme-color:                       #377dff !default;                                       // #377dff - blue, default theme color
+$primary-theme-color:                       #1287BA !default;                                       // #377dff - blue, default theme color
 
 // If `$primary-theme-color` is changed, contrast might also need adjustment. Edit these two lines below.
 $yiq-text-dark:                             #212529 !default;                                       // colors, accordong to theme color!
 $yiq-text-light:                            #ffffff !default;                                       // colors, accordong to theme color!
-$blue:        $primary-theme-color !default;       // orig: #007bff (*-primary)
-$red:         #f64e60 !default;                 // orig: #dc3545 (*-danger)
-$yellow:      #fad776 !default;                 // orig: #ffc107 (*-warning)
+$body-color:                                #212529 !default;                                       // body color
+$body-bg:                                   #ffffff !default;                                       // body background color
+
+$blue:        $primary-theme-color !default;    // orig: #007bff (*-primary)
+$red:         #772B2A !default;                 // orig: #dc3545 (*-danger)
+$yellow:      #FFDDAD !default;                 // orig: #ffc107 (*-warning)
 $green:       #6dbb30 !default;                 // orig: #28a745 (*-success)
-$cyan:        #73e7f7 !default;                 // orig: #17a2b8 (*-info)
-$indigo:      #533be2 !default;                 // orig: #6610f2 (*-ingido)
+$cyan:        #A2DDF6 !default;                 // orig: #17a2b8 (*-info)
+$indigo:      #181528 !default;                 // orig: #6610f2 (*-ingido)
 $purple:      #4c2c92 !default;                 // orig: #6f42c1 (*-purple)
 $pink:        #f92084 !default;                 // orig: #e83e8c (*-pink)
-$light:       #f8f9fa !default;                 // orig: $gray-100 (*-light)
+$light:       #F1F1F1 !default;                 // orig: $gray-100 (*-light)
 $secondary:   #6c757d !default;                 // orig: $gray-800 (*-secondary)
-$dark:        #000000  !default;  
-$dark-500:   rgb(28, 31, 31) !default;                 // orig: #000000 (*-dark)
-
-$text-muted:  #7e8299 !default;  
-$orange:      rgb(184, 133, 39) !default;
+$dark:        #000000 !default;                 // orig: #000000 (*-dark)
+$dark-500:   #1c1f1f !default;                 // orig: #000000 (*-dark)
+$text-muted:  #7e8299 !default;                 // orig: $gray-600
+$lightestblue: #ECF8FD !default;
+$orange:      #C1630B!default;
 
 
 // Theme Colors (buttons are also generated from here)
 $theme-colors: () !default;
 $theme-colors: map-merge(
   (
-    "primary":      $yellow,
+    "primary":      $blue,
     "secondary":    $secondary,
-    "success":      $blue,
+    "success":      $lightestblue,
     "info":         $cyan,
-    "warning":      $yellow,
+    "warning":      $cyan,
     "danger":       $red,
     "light":        $light,
     "dark":         $dark,
@@ -52,8 +55,8 @@ $theme-colors-soft: () !default;
 $theme-colors-soft: map-merge(
   (
     "primary":      23%,   //using the $yellow too light, need to adjust.
-    "secondary":    49%,
-    "success":      14%,
+    "secondary":    45%,
+    "success":      10%,
     "info":         15%,
     "warning":      15%,
     "danger":       33%,
@@ -84,10 +87,10 @@ $brand-color-list: map-merge((
 
 ), $brand-color-list);
 
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
+$gray-100: #f8f8f8 !default;
+$gray-200: #F1F1F1 !default;
+$gray-300: #EBEBEB !default;
+$gray-400: #B6B5BA!default;
 $gray-500: #adb5bd !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
@@ -98,3 +101,4 @@ $gray-900: #212529 !default;
 
   background-color: $dark-500;
 }
+

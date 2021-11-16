@@ -89,10 +89,11 @@ description: "Contact Message Form"
     }
 </style>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 <section>
-    <div class="rounded bg-white shadow-xs d-flex py-3">
+    <div class="rounded bg-white shadow-xs  py-3">
         <div class="m-5 m-4-xs text-center-xs">
 
             <h2 class="h3-xs font-weight-light mb-5">
@@ -193,25 +194,7 @@ description: "Contact Message Form"
                     <label for="contact_message">Message</label>
                 </div>
 
-                <!-- GDPR CONSENT -->
-                <div class="clearfix bg-light position-relative rounded p-4 mb-4">
 
-                    <span class="text-muted fs--12 d-block position-absolute bottom-0 end-0 m-2">
-                        EU GDPR
-                    </span>
-
-                    <label class="form-checkbox form-checkbox-primary">
-                        <input required type="checkbox" name="contact_gdpr">
-                        <i></i>
-                        <span>
-                            I consent that my data is being stored in
-                            line with the guidelines set out in
-                            <a href="page-terms-and-conditions.html" target="_blank">Privacy Policy</a>.
-                        </span>
-                    </label>
-
-                </div>
-                <!-- /GDPR CONSENT -->
 
 
 
@@ -238,22 +221,15 @@ description: "Contact Message Form"
                     Thank you for your message!
                 </div>
 
-                <head>
+                
+                
+                    <div class="g-recaptcha" data-sitekey="6Lf-PTEdAAAAAMsyDqJrcY7opTPquHFelNautYey"></div>
+                    <br />
 
-                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                </head>
-
-                <body>
-                    <form action="?" method="POST">
-                        <div class="g-recaptcha" data-sitekey="6Lf-PTEdAAAAAMsyDqJrcY7opTPquHFelNautYey"></div>
-                        <br />
-                       
-                    </form>
-                </body>
-                <button id="contactButton" type="submit" class="btn btn-primary btn-block">
-                    Send Message
-                </button>
-
+                    <button id="contactButton" type="submit" class="btn btn-primary btn-block">
+                        Send Message ❤
+                    </button>
+                    
             </form>
              
         </div>

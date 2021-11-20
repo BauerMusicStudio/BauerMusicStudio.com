@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "SmartyTheme"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Visual Studio Light",
+		"workbench.editor.highlightModifiedTabs": true,
+		"workbench.tree.indent": 16,
+		"workbench.editor.showIcons": false,
+		"workbench.statusBar.feedback.visible": false,
+		"workbench.colorCustomizations": {
+			"editor.selectionHighlightBackground": "#F6B94D"
+		},
+		"workbench.sideBar.location": "right",
+		"files.exclude": {
+			"Command Prompt.lnk": true,
+			"gulp*": true,
+			"package.json": true,
+			"package-lock.json": true,
+			"README_FIRST.html": true,
+			"RTL-NOTE.txt": true,
+			"changelog.txt": true,
+			"_gulp/**": true,
+
+			"SEED_PROJECT/**": true
+		},
+		"explorer.compactFolders": false,
+
+			}
+}

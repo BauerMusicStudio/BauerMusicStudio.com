@@ -4,7 +4,12 @@ title = "Bauer Music Studio"
 theme = "Smarty"
 cleanDestinationDir = true
 googleAnalytics = "G-TMY68L3RL0"
+disableKinds=["taxonomy","term"]
+[taxonomies]
+  category="categories"
+  tag="tags"
 
+  
 [params]
 showtemplateinfo = "true"
 

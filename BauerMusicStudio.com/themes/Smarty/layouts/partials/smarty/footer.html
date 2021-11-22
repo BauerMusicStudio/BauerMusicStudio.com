@@ -9,28 +9,25 @@
 <footer id="footer" class="shadow-xs bg-dark-500">
     <div class="container">
 
-        <div class="row gutters-xs--xs text-white">
+        <div class="row gutters-xs--xs">
 
             <!-- col 1 : contact -->
-            <div class="order-3 order-lg-1  col-12 col-lg-4">
+            <div class="order-2 order-lg-1  col-12 col-lg-4 text-light">
 
                 <div class="py-5 px-3 text-center">
-                    <a href="/contact/" class="clearfix py-1 h5 font-weight-medium text-white">
-                        <h4 class="text-white mb-5">Schedule a Lesson</h4>
+                    <a href="/contact/#ContactForm" class="clearfix text-white">
+                        <h2 class="text-white mb-3 font-weight-normal">Schedule a Lesson</h2>
                     </a>
-                    <div class="mb-4">
-                        
-                                
-                          
-                        <h4>Follow Us</h4>
+                    <div>
+                        <h4 class="mb-4 font-weight-light">Follow Us</h4>
                         <!-- social -->
                         <div class="clearfix">
-                            <a href="https://www.facebook.com/profile.php?id=100070114514219" target='_blank' 
+                            <a href="https://www.facebook.com/profile.php?id=100070114514219" target='_blank'
                                 class="btn btn-sm btn-facebook transition-hover-top mb-2 rounded-circle text-white "
                                 rel="noopener" aria-label="facebook page">
                                 <i class="fi fi-social-facebook"></i>
                             </a>
-                             <a href="https://www.instagram.com/bauermusicstudio/" target='_blank'
+                            <a href="https://www.instagram.com/bauermusicstudio/" target='_blank'
                                 class="btn btn-sm btn-twitter transition-hover-top mb-2 rounded-circle text-white primary"
                                 rel="noopener" aria-label="instagram page">
                                 <i class="fi fi-social-instagram"></i>
@@ -49,14 +46,15 @@
 
             <!-- MIDDLE : LOGO -->
             <div
-                class="order-2 order-lg-2 col-12 col-lg-4 mt--n0 m-0-xs m-10-md align-items-center justify-content-center">
+                class="order-3 order-lg-2 col-12 col-lg-4 mt--n0 m-0-xs m-10-md align-items-center justify-content-center">
                 <div class=" py-5 px-3 text-center">
                     <!-- logo -->
-                    <div class="py-3">
+                    <div
+                        class="py-3 bg-white w--150 h--150 mb-4 border border-light rounded-circle shadow-md d-inline-flex justify-content-center align-items-center text-black">
                         <i class="flaticon-quaver fs--60"></i>
                     </div>
                     <!-- copyright -->
-                    <p class="fs--14 text-black">
+                    <p class="fs--14 text-light">
                         All Rights Reserved
                         <br>
                         Bauer Music Studio
@@ -65,9 +63,11 @@
             </div>
 
             <!-- col 2 : Opening -->
-            <div class="order-1 order-lg-3  col-12 col-lg-4">
+            <div class="order-1 order-lg-3  col-12 col-lg-4 text-light">
                 <div class="py-5">
-                    <h4 class="text-center mb-3">Accepting Students</h4>
+                    <a href="/contact/" class="clearfix text-white">
+                        <h2 class="text-center text-white mb-4 mb-5-xs font-weight-normal">Accepting Students</h2>
+                    </a>
                     <ul class="list-unstyled mb-0 px-3">
                         <li class="list-item d-flex border bx-0 bt-0 px-1 py-2">
                             <div class="w-50">
@@ -120,16 +120,17 @@
         <div class="container">
             <div class="row gutters-xs--xs text-white">
                 <div class="font-weight-light text-black">
-    
+
                     <div class="fs--14 py-2 float-start float-none-xs m-0-xs">
-                        &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format "2006"}} {{
+                        &copy; {{ with .Site.Copyright | default .Site.Title }} {{ . | safeHTML }} {{ now.Format
+                        "2006"}} {{
                         end }}
-    
+
                     </div>
-    
-    
-                   
-    
+
+
+
+
                 </div>
             </div>
         </div>

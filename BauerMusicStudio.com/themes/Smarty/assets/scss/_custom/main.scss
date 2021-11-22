@@ -62,6 +62,12 @@ body.header-over:not(.user-scrolled-down){
 
 @media only screen and (max-width: 991px)
 {
+    
+   
+    body:not(.layout-admin) section {
+    padding-top: 45px !important;
+    }
+
 
     body:not(.layout-admin).header-sticky .navbar-light .navbar-nav .nav-link:hover  {
         color: $info !important;
@@ -92,7 +98,7 @@ body.header-over:not(.user-scrolled-down){
     
     .navbar-collapse.show>.navbar-nav {
 
-        top:78px;
+        top:55px;
         overflow-y: hidden;
         left:0;
         right:0;

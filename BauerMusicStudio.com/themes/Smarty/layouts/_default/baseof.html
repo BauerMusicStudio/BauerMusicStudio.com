@@ -21,6 +21,8 @@
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/flaticon/flaticon.css">
 
+
+	{{ if not (in (.Site.BaseURL | string) "localhost")}}
 	<script>
 		window.dataLayer = window.dataLayer || [];
 	</script>
@@ -34,7 +36,7 @@
 					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-5CN5NR4');</script>
 	<!-- End Google Tag Manager -->
-
+	{{ end }}
 
 
 
@@ -78,7 +80,7 @@
 		content="Private music lesson studio for trumpet players in Boise, Eagle, Nampa, and Caldwell Idaho.">
 	<meta property="twitter:image" content="https://BauerMusicStudio.com/images/currentimages/RandyBauer2021meta.JPG">
 
-	{{ template "_internal/google_analytics.html" . }}
+	
 </head>
 
 
@@ -89,6 +91,7 @@
 
 
 <body class="header-sticky header-over">
+	{{ if not (in (.Site.BaseURL | string) "localhost")}}
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CN5NR4" height="0" width="0"
 			style="display:none;visibility:hidden"></iframe></noscript>
@@ -100,7 +103,7 @@
 
 		gtag('config', 'AW-YYYYYY');
 	</script>
-
+	{{ end }}
 	<div id="wrapper">
 
 

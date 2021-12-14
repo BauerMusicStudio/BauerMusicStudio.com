@@ -13,7 +13,7 @@ $body-color:                                #212529 !default;                   
 $body-bg:                                   #ffffff !default;                                       // body background color
 
 $blue:        $primary-theme-color !default;    // orig: #007bff (*-primary)
-$red:         #772B2A !default;                 // orig: #dc3545 (*-danger)
+$red:         #d30000 !default;                 // orig: #dc3545 (*-danger)
 $yellow:      #FFDDAD !default;                 // orig: #ffc107 (*-warning)
 $green:       #6dbb30 !default;                 // orig: #28a745 (*-success)
 $cyan:        #A2DDF6 !default;                 // orig: #17a2b8 (*-info)
@@ -39,7 +39,7 @@ $theme-colors: map-merge(
     "success":      $lightestblue,
     "info":         $cyan,
     "warning":      $cyan,
-    "danger":       $red,
+    "danger":       $menublue,
     "light":        $light,
     "dark":         $dark,
 

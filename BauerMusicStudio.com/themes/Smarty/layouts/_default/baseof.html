@@ -36,6 +36,20 @@
 					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
 		})(window, document, 'script', 'dataLayer', 'GTM-5CN5NR4');</script>
 	<!-- End Google Tag Manager -->
+	<script>
+		/**
+		* Function that captures a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var captureOutboundLink = function (url) {
+			ga('send', 'event', 'outbound', 'click', url, {
+				'transport': 'beacon',
+				'hitCallback': function () { document.location = url; }
+			});
+		}
+	</script>
 	{{ end }}
 
 
@@ -80,7 +94,7 @@
 		content="Private music lesson studio for trumpet players in Boise, Eagle, Nampa, and Caldwell Idaho.">
 	<meta property="twitter:image" content="https://BauerMusicStudio.com/images/currentimages/RandyBauer2021meta.JPG">
 
-	
+
 </head>
 
 

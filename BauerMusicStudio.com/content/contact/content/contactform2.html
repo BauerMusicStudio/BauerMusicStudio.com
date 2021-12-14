@@ -136,15 +136,31 @@ description: "Randy Bauer Bauer Music Studio Trumpet Lesson Contact Form"
           +++++++++++++++++++++++++++++++++++++++++++++++++++++++
         -->
 
-            <form id="contactForm" novalidate action="https://formspree.io/f/mvodndny" method="POST"
-                data-ajax-container="#ajax_dd_contact_response_container" data-ajax-update-url="false"
-                data-ajax-show-loading-icon="true" data-ajax-callback-function="" data-error-scroll-up="false"
-                data-ajax-control-alerts="true" data-ajax-control-alert-succes="#contactSuccess"
-                data-ajax-control-alert-unexpected="#contactErrorUnexpected"
-                data-ajax-control-alert-mandaroty="#contactErrorMandatory"
-                data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Please, complete all required fields!"
-                data-error-toast-delay="2000" data-error-toast-position="bottom-center" class="bs-validate js-ajax">
+            <form id="contactForm"
+                 novalidate action="https://formspree.io/f/mvodndny" 
+                 method="POST" 
 
+                 data-ajax-container="#ajax_dd_contact_response_container" 
+                 data-ajax-update-url="false" 
+                 data-ajax-show-loading-icon="true" 
+                 data-ajax-callback-function="" 
+                 data-error-scroll-up="false" 
+                 
+                 data-ajax-control-alerts="true"
+                 data-ajax-control-alert-succes="#contactSuccess" 
+                 data-ajax-control-alert-unexpected="#contactErrorUnexpected" 
+                 data-ajax-control-alert-mandaroty="#contactErrorMandatory" 
+
+                 data-error-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Please, complete all required fields!" 
+                 data-error-toast-delay="2000" 
+                 data-error-toast-position="top-center"
+
+                 data-success-toast-text="<i class='fi fi-circle-spin fi-spin float-start'></i> Thank You!" 
+                 data-success-toast-delay="2000" 
+                 data-success-toast-position="top-center"
+
+
+                 class="bs-validate js-ajax">
 
                 <!-- 1. 
             optional, hidden action for your backend
@@ -185,7 +201,13 @@ description: "Randy Bauer Bauer Music Studio Trumpet Lesson Contact Form"
                 <div class="form-label-group mb-3">
                     <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text"
                         class="form-control">
-                    <label for="contact_phone">Phone</label>
+                    <label for="contact_age">Age</label>
+                </div>
+
+                <div class="form-label-group mb-3">
+                    <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text"
+                        class="form-control">
+                    <label for="contact_experience">Experience</label>
                 </div>
 
                 <div class="form-label-group mb-4">
@@ -208,7 +230,7 @@ description: "Randy Bauer Bauer Music Studio Trumpet Lesson Contact Form"
 
                 <!-- {:err:unexpected:} internal server error -->
                 <div id="contactErrorUnexpected" class="hide alert alert-danger p-3">
-                    Unexpected Error!
+                    Please Check 'I'm not a robot'
                 </div>
 
                 <!-- {:err:required:} mandatory fields -->

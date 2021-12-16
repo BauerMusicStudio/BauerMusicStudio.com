@@ -39,7 +39,7 @@ $theme-colors: map-merge(
     "success":      $lightestblue,
     "info":         $cyan,
     "warning":      $cyan,
-    "danger":       $menublue,
+    "danger":       $cyan,
     "light":        $light,
     "dark":         $dark,
 
@@ -103,3 +103,38 @@ $gray-900: #212529 !default;
   background-color: $dark-500;
 }
 
+#snow {
+  font-family: Androgyne;
+  background-image: url(/images/snowflakes/s1.png),url(/images/snowflakes/s2.png),url(/images/snowflakes/s3.png);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: snow 20s linear infinite;
+  -moz-animation: snow 20s linear infinite;
+  -o-animation: snow 20s linear infinite;
+  animation: snow 20s linear infinite;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: snow;
+}
+@keyframes snow{
+  0%{background-position:0 0,0 0,0 0;}
+  100%{background-position:500px 1000px,200px 400px,-100px 300px;}
+}
+@-moz-keyframes snow{
+  0%{background-position:0 0,0 0,0 0;}
+  100%{background-position:500px 1000px,200px 400px,100px 300px;}}
+@-webkit-keyframes snow{
+  0%{background-position:0 0,0 0,0 0;}
+  100%{background-position:500px 1000px,200px 400px,-100px 300px;}
+}@-ms-keyframes snow{
+  0%{background-position:0 0,0 0,0 0;}
+  100%{background-position:500px 1000px,200px 400px,-100px 300px;}}

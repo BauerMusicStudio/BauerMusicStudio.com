@@ -1,2 +1,2 @@
 # BauerMusicStudio.com
-Website for BauerMusicStudio.com
+Website for Randy Bauer BauerMusicStudio.com

@@ -1,0 +1,114 @@
+---
+title: "Contact Form"
+description: "Contact Message Form"
+---
+
+<section id="contact_form">
+  <div class="bg-white shadow-xs py-3">
+    <div class=" m-5 m-4-xs text-center-xs">
+
+      <h2 class="font-weight-light mb-5">
+        Send Me a <span class="font-weight-medium text-primary">Message</span> </h2>
+
+      <!-- modify this form HTML and place wherever you want your form -->
+      <form 
+      id="my-form" 
+      action="https://formspree.io/f/mvodndny" 
+      method="POST" 
+      class="bs-validate" 
+      novalidate>
+
+        <input type="text" name="norobot" value="" class="hide" tabindex="-1">
+        <!-- -->
+
+        <div class="form-label-group mb-3">
+          <input required placeholder="Name" id="contact_name" name="contact_name" type="text" class="form-control">
+          <label for="contact_name">Name</label>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please Enter your name.</div>
+        </div>
+
+        <div class="form-label-group mb-3">
+          <input required placeholder="Email" id="contact_email" name="contact_email" type="email" class="form-control">
+          <label for="contact_email">Email</label>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please Enter A Email.</div>
+        </div>
+
+        <div class="form-label-group mb-3">
+          <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text" class="form-control">
+          <label for="contact_age">Age</label>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please Enter Students Age.</div>
+        </div>
+
+        <div class="form-label-group mb-3">
+          <input required placeholder="Phone" id="contact_phone" name="contact_phone" type="text" class="form-control">
+          <label for="contact_experience">Experience</label>
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please Enter Your Experience.</div>
+        </div>
+
+        <div class="form-label-group mb-4">
+          <textarea required placeholder="Message" id="contact_message" name="contact_message" class="form-control"
+            rows="3"></textarea>
+          <label for="contact_message">Message</label>
+          <div class="valid-feedback">Looks good!</div> 
+          <div class="invalid-feedback">Please Enter a Message For Me.</div>
+        </div>
+
+        <div class="g-recaptcha" data-sitekey="6LdPCTwdAAAAADdvbdzWqMBwZ3AIsYDrAmGIpu8Z"></div>
+
+        <button id="my-form-button" class="btn btn-primary btn-block mt-3">
+          Send Message 	
+          &#127930;
+        </button>
+
+        <p id="my-form-status"></p>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Place this script at the end of the body tag -->
+<script>
+  var form = document.getElementById("my-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    
+    if (form.checkValidity() === true) {
+      event.preventDefault();
+      
+  
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+    }
+</script>

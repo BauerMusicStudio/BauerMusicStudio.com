@@ -169,7 +169,35 @@ $swiper-icon-prev: 			"\f1ac" !default;
 
 }
 
+// // OUR CUSTOM ALIGNMENT
+// .swiper-btn-group .swiper-button-prev {
+//     height: 100px ;
+// 	position: relative !important;
 
+
+//     @if $global-rtl-enable == false {
+//         right: auto;
+//         left: 30px;
+//     } @else {
+//         right: 30px;
+//         left: auto;
+//     }
+
+// }
+
+// .swiper-btn-group .swiper-button-next {
+//     height: 100px ;
+// 	position: relative !important;
+
+// 	@if $global-rtl-enable == false {
+// 		right: 30px;
+// 		left: auto;
+// 	} @else {
+// 		right: auto;
+// 		left: 30px;
+// 	}
+
+// }
 
 
 

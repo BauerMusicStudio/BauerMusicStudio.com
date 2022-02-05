@@ -9,35 +9,30 @@ description: "Pricing for Randy Bauer Trumpet Lessons in Boise, Idaho, and the T
 <section id="section_pricing" class="bg-gray-300 shadow-md">
     <div class="container">
 
-
-        <!-- mobile swipe info -->
-        <div class="d-block d-xl-none bg-success rounded clearfix text-center p-4">
-            <i class="fi fi-arrow-left-slim float-start"></i>
-            <i class="fi fi-arrow-right-slim float-end"></i>
-            <span class="text-dark">
-                Swipe for Next Box 
-            </span>
-           
-        </div>
-        <!-- /mobile swipe info -->
-
-
-
         <div class="swiper-container px-5 p-0-xs" data-swiper='{
-                "autoplay": true,
+            "autoplay": { "delay" : 2700, "disableOnInteraction": false },
                 "slidesPerView": 3,
                 "spaceBetween": 30,
+                "pagination": { "type": "bullets" },
                 "breakpoints": {
                     "1200": { "slidesPerView": "3" },
                     "768": { "slidesPerView": "2" },
                     "0": 	{ "slidesPerView": "1" }
                 }
             }'>
+              <!-- mobile swipe info -->
+        <div class="d-block d-xl-none clearfix swiper-container-horizontal">
+           
+            <!-- Add Pagination -->
+	        <div class="swiper-pagination swiper-pagination-black pt-2 "></div>
+           
+        </div>
+        <!-- /mobile swipe info -->
             <div class="swiper-wrapper py-5">
 
                 <div class="swiper-slide">
 
-                    <div class="bg-white rounded-xl p-5 m-2-xs shadow-md text-center text-dark">
+                    <div class="bg-white p-5 m-2-xs shadow-md text-center text-dark">
                         <p class="badge badge-light shadow-xs badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
                             Beginner
                          </p>
@@ -68,7 +63,7 @@ description: "Pricing for Randy Bauer Trumpet Lessons in Boise, Idaho, and the T
 
                 <div class="swiper-slide">
 
-                    <div class="bg-white rounded-xl p-5 m-2-xs shadow-md text-center">
+                    <div class="bg-white p-5 m-2-xs shadow-md text-center">
                         <p class="badge badge-light shadow-xs badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
                             Intermediate
                          </p>
@@ -98,7 +93,7 @@ description: "Pricing for Randy Bauer Trumpet Lessons in Boise, Idaho, and the T
 
                 <div class="swiper-slide">
 
-                    <div class="bg-white rounded-xl p-5 m-1-xs shadow-md text-center">
+                    <div class="bg-white p-5 m-1-xs shadow-md text-center">
                         <p class="badge badge-light shadow-xs badge-box fs--20 font-weight-normal px-3 py-2 mb-2">
                             Advanced
                          </p>

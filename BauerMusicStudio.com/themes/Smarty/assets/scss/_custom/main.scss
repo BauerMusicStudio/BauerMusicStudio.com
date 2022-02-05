@@ -8,9 +8,12 @@ font-family: "Inter","Source Sans Pro","Muli","Noto Sans",-apple-system,BlinkMac
 #header
 {
     .navbar .navbar-nav .nav-link {
-        font-size: 18px !important;
-        font-color: #000000
+        font-size: 22px !important;
         
+        
+    }
+    .container{
+        max-width: 1600px;
     }
 }
 body.header-over.user-scrolled-down.header-sticky{
@@ -21,12 +24,12 @@ body.header-over.user-scrolled-down.header-sticky{
 body:not(.layout-admin).header-sticky  {
     #header{
 
-        background-color: #2195c7f0;
+        background-color: $primary;
     }
     
 
     .navbar-light .navbar-nav .nav-link:hover{
-        color:$gray-600 !important;
+        color: $gray-400 !important;
     }
     
 
@@ -36,14 +39,18 @@ body:not(.layout-admin).header-sticky  {
     }
 }
 
+nav.navbar-light a.nav-link:not(.active):not(:hover) {
+    color: #ffffff
+}
+
 /* This is the color of the banner bar when you scroll it */
 body.header-over:not(.user-scrolled-down){
     #header {
-         background: #ecf8fd75 !important;
+         background: #3d3d3d96 !important;
         
     }
     .navbar .navbar-nav .nav-link {
-        color: #000 !important;
+        color: #fff !important;
         
     }
     
@@ -59,6 +66,9 @@ body.header-over:not(.user-scrolled-down){
     }
     
 }
+
+
+
 
 @media only screen and (max-width: 991px)
 {
@@ -93,31 +103,30 @@ body.header-over:not(.user-scrolled-down){
     }
     
     .navbar-xs{
-        background-color: #2195c7;
+        background-color: #798891;
     }
     
     .navbar-collapse.show>.navbar-nav {
-
-        top:55px;
+        top:70px;
         overflow-y: hidden;
         left:0;
         right:0;
         bottom:unset;
-        background-color: #2195c7ed;
-        border-bottom-left-radius: 13px;
-        border-bottom-right-radius: 13px;
+        background-color: #798892;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
 
     }
 }
 
 .btn-facebook, .btn-facebook:hover {
     color: #fff;
-    background-color: #3b599800;
-    border: 2px solid $info;
+    background-color: $primary;
+    border: 2px solid $primary;
 }
 
 .btn-twitter, .btn-twitter:hover {
     color: #fff;
-    background-color: #3b599800;
-    border: 2px solid $info;
+    background-color: $primary;
+    border: 2px solid $primary;
 }

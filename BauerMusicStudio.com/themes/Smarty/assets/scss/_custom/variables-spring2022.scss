@@ -4,7 +4,7 @@
 // 					coolors color 
 // 					https://coolors.co/2e2e2e-dbe1e6-2e6bdc-eac435-e40066-da4167-fb4d3d
 // -------------------------------------------------------------------------------------------
-$primary-theme-color:                       #1287BA !default;                                       // #377dff - blue, default theme color
+$primary-theme-color:                       #5182b9 !default;                                       // #377dff - blue, default theme color
 
 // If `$primary-theme-color` is changed, contrast might also need adjustment. Edit these two lines below.
 $yiq-text-dark:                             #212529 !default;                                       // colors, accordong to theme color!
@@ -15,18 +15,18 @@ $body-bg:                                   #ffffff !default;                   
 $blue:        $primary-theme-color !default;    // orig: #007bff (*-primary)
 $red:         #d30000 !default;                 // orig: #dc3545 (*-danger)
 $yellow:      #FFDDAD !default;                 // orig: #ffc107 (*-warning)
-$green:       #6dbb30 !default;                 // orig: #28a745 (*-success)
+$green:       #12BA9E !default;                 // orig: #28a745 (*-success)
 $cyan:        #A2DDF6 !default;                 // orig: #17a2b8 (*-info)
 $indigo:      #181528 !default;                 // orig: #6610f2 (*-ingido)
-$purple:      #4c2c92 !default;                 // orig: #6f42c1 (*-purple)
-$pink:        #f92084 !default;                 // orig: #e83e8c (*-pink)
+$purple:      #BEB8EB !default;                 // orig: #6f42c1 (*-purple)
+$pink:        #aa265a !default;                 // orig: #e83e8c (*-pink)
 $light:       #F1F1F1 !default;                 // orig: $gray-100 (*-light)
 $secondary:   #6c757d !default;                 // orig: $gray-800 (*-secondary)
-$dark:        #000000 !default;                 // orig: #000000 (*-dark)
-$dark-500:   #1c1f1f !default;                 // orig: #000000 (*-dark)
+$dark:        #3D3D3D !default;                 // orig: #000000 (*-dark)
+$dark-500:   #626262 !default;                 // orig: #000000 (*-dark)
 $text-muted:  #7e8299 !default;                 // orig: $gray-600
+$green-2:       #23cfb3 !default; 
 $lightestblue: #ECF8FD !default;
-$menublue:  #2195c7f0 !default;
 $orange:      #C1630B!default;
 $white:       #ffffff!default;
 
@@ -43,10 +43,11 @@ $theme-colors: map-merge(
     "danger":       $cyan,
     "light":        $light,
     "dark":         $dark,
-
+    "green":         $green,
     "indigo":       $indigo,
     "purple":       $purple,
-    "pink":         $pink
+    "pink":         $pink,
+    "lightgreen":   $green-2,
   ),
   $theme-colors
 );

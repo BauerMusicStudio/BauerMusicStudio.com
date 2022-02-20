@@ -16,19 +16,37 @@ $blue:        $primary-theme-color !default;    // orig: #007bff (*-primary)
 $red:         #d30000 !default;                 // orig: #dc3545 (*-danger)
 $yellow:      #FFDDAD !default;                 // orig: #ffc107 (*-warning)
 $green:       #12BA9E !default;                 // orig: #28a745 (*-success)
-$cyan:        #A2DDF6 !default;                 // orig: #17a2b8 (*-info)
+$cyan:        #34f7cc !default;                 // orig: #17a2b8 (*-info)
 $indigo:      #181528 !default;                 // orig: #6610f2 (*-ingido)
 $purple:      #BEB8EB !default;                 // orig: #6f42c1 (*-purple)
-$pink:        #aa265a !default;                 // orig: #e83e8c (*-pink)
+$pink:        #e42b682b !default;                 // orig: #e83e8c (*-pink)
 $light:       #F1F1F1 !default;                 // orig: $gray-100 (*-light)
 $secondary:   #6c757d !default;                 // orig: $gray-800 (*-secondary)
-$dark:        #3D3D3D !default;                 // orig: #000000 (*-dark)
-$dark-500:   #626262 !default;                 // orig: #000000 (*-dark)
+$dark:        #1c1c1c !default;                 // orig: #000000 (*-dark)
 $text-muted:  #7e8299 !default;                 // orig: $gray-600
-$green-2:       #23cfb3 !default; 
-$lightestblue: #ECF8FD !default;
-$orange:      #C1630B!default;
-$white:       #ffffff!default;
+$green-2:     #23cfb3 !default; 
+$lightestblue:#ECF8FD !default;
+$orange:      #C1630B !default;
+$off-white:   #e4e4e4 !default;
+$white:       #fff    !default;
+$footicon:    #e42b68 !default;
+
+.text-danger-gradient {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(-107deg,#82009f,#f7345e);
+  -webkit-background-clip: text;
+  color: #f7345e;
+  display: inline !important;
+}
+
+.btn-danger {
+  
+  background: linear-gradient(-107deg,#82009f,#f7345e);
+  color: #f7345e;
+  display: inline-block;
+  position: relative;
+}
+
 
 // Theme Colors (buttons are also generated from here)
 $theme-colors: () !default;
@@ -40,7 +58,7 @@ $theme-colors: map-merge(
     "success":      $lightestblue,
     "info":         $cyan,
     "warning":      $cyan,
-    "danger":       $cyan,
+    // "danger":       $cyan,
     "light":        $light,
     "dark":         $dark,
     "green":         $green,
@@ -48,6 +66,7 @@ $theme-colors: map-merge(
     "purple":       $purple,
     "pink":         $pink,
     "lightgreen":   $green-2,
+    "hotpink": $footicon,
   ),
   $theme-colors
 );
@@ -99,154 +118,3 @@ $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-
-.bg-dark-500{
-
-  background-color: $dark-500;
-}
-
-
-//Winter 2021-2022 Theme for Menu, Navigation Bar, AKA the Transparent Menu. Paste into main.scss to use //
-// body.header-over.user-scrolled-down.header-sticky{
-//   .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-//       color: $info !important;
-//   }
-// }
-// body:not(.layout-admin).header-sticky  {
-//   #header{
-
-//       background-color: #2195c7f0;
-//   }
-  
-
-//   .navbar-light .navbar-nav .nav-link:hover{
-//       color:$gray-600 !important;
-//   }
-  
-
-
-//   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-//       color: $info !important;
-//   }
-// }
-
-/* This is the color of the banner bar when you scroll it */
-// body.header-over:not(.user-scrolled-down){
-//   #header {
-//        background: #ecf8fd75 !important;
-      
-//   }
-//   .navbar .navbar-nav .nav-link {
-//       color: #000 !important;
-      
-//   }
-  
-//   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-//       color: $gray-600 !important;
-//   }
- 
-//   .navbar .navbar-toggler {
-//       fill:black !important;
-//   }
-//   .navbar .navbar-toggler {
-
-//   }
-  
-// }
-
-// @media only screen and (max-width: 991px)
-// {
-  
-  
-//       body:not(.layout-admin).header-sticky .navbar-light .navbar-nav .nav-link:hover  {
-//           color: $info !important;
-//       }
- 
-//   body:not(.layout-admin) section {
-//   padding-top: 45px !important;
-//   }
-
-
-
-//   body.header-over:not(.user-scrolled-down) .navbar-light .navbar-brand:hover
-//   {
-//       color: $primary !important;
-//   }
-//   body.header-over.user-scrolled-down .navbar-light .navbar-brand:hover
-//   {
-//       color: $info  !important;
-//   }
- 
-//   body.header-over.user-scrolled-down.header-sticky .navbar-light .navbar-nav .nav-link:hover,{
-//       color: $info !important;
-//   }
-
-//   .navbar-collapse.show {
-
-//       background-color: transparent;
-//   }
-  
-//   .navbar-xs{
-//       background-color: #2195c7;
-//   }
-  
-//   .navbar-collapse.show>.navbar-nav {
-
-//       top:55px;
-//       overflow-y: hidden;
-//       left:0;
-//       right:0;
-//       bottom:unset;
-//       background-color: #2195c7ed;
-//       border-bottom-left-radius: 13px;
-//       border-bottom-right-radius: 13px;
-
-//   }
-// }
-
-
-
-
-
-
-
-
-
-
-
-// curently disabled, uncomment to enable
-// #snow {
-//   font-family: Androgyne;
-//   background-image: url(/images/snowflakes/s1.png),url(/images/snowflakes/s2.png),url(/images/snowflakes/s3.png);
-//   height: 100%;
-//   left: 0;
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   z-index: 1;
-//   -webkit-animation: snow 20s linear infinite;
-//   -moz-animation: snow 20s linear infinite;
-//   -o-animation: snow 20s linear infinite;
-//   animation: snow 20s linear infinite;
-//   animation-duration: 20s;
-//   animation-timing-function: linear;
-//   animation-delay: 0s;
-//   animation-iteration-count: infinite;
-//   animation-direction: normal;
-//   animation-fill-mode: none;
-//   animation-play-state: running;
-//   animation-name: snow;
-// }
-// @keyframes snow{
-//   0%{background-position:0 0,0 0,0 0;}
-//   100%{background-position:500px 1000px,200px 400px,-100px 300px;}
-// }
-// @-moz-keyframes snow{
-//   0%{background-position:0 0,0 0,0 0;}
-//   100%{background-position:500px 1000px,200px 400px,100px 300px;}}
-// @-webkit-keyframes snow{
-//   0%{background-position:0 0,0 0,0 0;}
-//   100%{background-position:500px 1000px,200px 400px,-100px 300px;}
-// }@-ms-keyframes snow{
-//   0%{background-position:0 0,0 0,0 0;}
-//   100%{background-position:500px 1000px,200px 400px,-100px 300px;}}

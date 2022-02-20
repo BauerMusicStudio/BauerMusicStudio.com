@@ -18,13 +18,13 @@ font-family: "Inter","Source Sans Pro","Muli","Noto Sans",-apple-system,BlinkMac
 }
 body.header-over.user-scrolled-down.header-sticky{
     .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-        color: $info !important;
+        color: $gray-400!important;
     }
 }
 body:not(.layout-admin).header-sticky  {
     #header{
 
-        background-color: $primary;
+        background-color: $dark;
     }
     
 
@@ -32,25 +32,27 @@ body:not(.layout-admin).header-sticky  {
         color: $gray-400 !important;
     }
     
-
-
-    .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
-        color: $info !important;
+    .navbar .navbar-toggler {
+        fill:$off-white !important;
     }
+    
+
 }
+
+
 
 nav.navbar-light a.nav-link:not(.active):not(:hover) {
-    color: #ffffff
+    color: $off-white
 }
 
-/* This is the color of the banner bar when you scroll it */
+/* This is the color of the banner bar before you scroll it */
 body.header-over:not(.user-scrolled-down){
     #header {
-         background: #3d3d3d96 !important;
+         background: #1d1d1dba !important;
         
     }
     .navbar .navbar-nav .nav-link {
-        color: #fff !important;
+        color: $off-white !important;
         
     }
     
@@ -59,11 +61,9 @@ body.header-over:not(.user-scrolled-down){
     }
    
     .navbar .navbar-toggler {
-        fill:black !important;
+        fill: $off-white !important;
     }
-    .navbar .navbar-toggler {
-
-    }
+    
     
 }
 
@@ -75,26 +75,16 @@ body.header-over:not(.user-scrolled-down){
     
     
         body:not(.layout-admin).header-sticky .navbar-light .navbar-nav .nav-link:hover  {
-            color: $info !important;
+            color: $gray-400 !important;
         }
    
     body:not(.layout-admin) section {
     padding-top: 45px !important;
     }
 
-  
-
-    body.header-over:not(.user-scrolled-down) .navbar-light .navbar-brand:hover
-    {
-        color: $primary !important;
-    }
-    body.header-over.user-scrolled-down .navbar-light .navbar-brand:hover
-    {
-        color: $info  !important;
-    }
    
     body.header-over.user-scrolled-down.header-sticky .navbar-light .navbar-nav .nav-link:hover,{
-        color: $info !important;
+        color: $gray-400 !important;
     }
 
     .navbar-collapse.show {
@@ -103,16 +93,16 @@ body.header-over:not(.user-scrolled-down){
     }
     
     .navbar-xs{
-        background-color: #798891;
+        background-color: #1c1c1c00;
     }
     
     .navbar-collapse.show>.navbar-nav {
-        top:70px;
+        top:60px;
         overflow-y: hidden;
         left:0;
         right:0;
         bottom:unset;
-        background-color: #798892;
+        background-color: #1d1d1dba;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 0px;
 
@@ -130,3 +120,59 @@ body.header-over:not(.user-scrolled-down){
     background-color: $primary;
     border: 2px solid $primary;
 }
+
+//used for homepage hero
+//lg
+@media only screen and (min-width: 1422px){
+.display-bauer-lg,
+.display--bauer-lg {
+    font-size: 10.5rem !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+}
+
+.display-music-lg,
+.display--music-lg {
+    font-size: 4.688rem !important;
+    font-weight: 400 !important;
+    line-height: 1.2 !important;
+}
+}
+
+//md
+@media only screen and (min-width: map-get($grid-breakpoints, "md"))
+{
+	.display-bauer-md,
+	.display--bauer-md {
+	font-size: 5.3rem;
+	font-weight: 400;
+	line-height: 1.2;
+	}
+    
+    .display-music-md,
+    .display--music-md {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+
+}
+
+//xs
+@media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+	//custom display used on homepage hero
+	.display-bauer-xs,
+	.display--bauer-xs {
+	font-size: 4.5rem !important;
+	font-weight: 400 !important;
+	line-height: 1.2 !important;
+	}
+    
+    .fs--32-xs,
+    .fs--32-xs {
+        font-size: 32px !important;
+    }
+
+}
+

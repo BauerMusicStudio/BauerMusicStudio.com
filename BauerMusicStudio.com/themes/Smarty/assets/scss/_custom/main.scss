@@ -128,14 +128,14 @@ body.header-over:not(.user-scrolled-down){
 .display--bauer-lg {
     font-size: 10.5rem !important;
     font-weight: 400 !important;
-    line-height: 1.2 !important;
+    line-height: .2 !important;
 }
 
 .display-music-lg,
 .display--music-lg {
     font-size: 4.688rem !important;
     font-weight: 400 !important;
-    line-height: 1.2 !important;
+    line-height: 3.2 !important;
 }
 }
 
@@ -176,3 +176,44 @@ body.header-over:not(.user-scrolled-down){
 
 }
 
+//about page hero xs
+@media only screen and (max-width: map-get($grid-breakpoints, "md")) {
+	//custom display used on homepage hero
+	.display-about-xs,
+	.display--about-xs {
+	font-size: 2.6rem !important;
+	font-weight: 400 !important;
+	line-height: 2.2 !important;
+	}
+    
+    .fs--32-xs,
+    .fs--32-xs {
+        font-size: 32px !important;
+    }
+
+}
+
+
+//horizontal rule(line)
+
+  
+    hr
+     {
+    width: 75%;
+    height: 1px;
+    background-color: #1c1c1c;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    }
+    
+//vertical rule(line)
+    // .vr {
+    //     display: inline-block;
+    //     align-self: stretch;
+    //     width: 1px;
+    //     min-height: 1em;
+    //     background-color: currentColor;
+    //     opacity: .25;
+    // }

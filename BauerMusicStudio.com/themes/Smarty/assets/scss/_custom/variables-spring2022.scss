@@ -32,10 +32,10 @@ $white:       #fff    !default;
 $footicon:    #e42b68 !default;
 
 .text-danger-gradient {
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(-107deg,#82009f,#f7345e);
-  -webkit-background-clip: text;
-  color: #f7345e;
+  -webkit-text-fill-color: transparent!important;
+  background: linear-gradient(-107deg,#ffae89,#ff0055) !important;
+  -webkit-background-clip: text !important;
+  color: #ff0055 !important;
   display: inline !important;
 }
 

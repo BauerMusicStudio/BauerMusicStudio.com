@@ -30,21 +30,40 @@ $orange:      #C1630B !default;
 $off-white:   #e4e4e4 !default;
 $white:       #fff    !default;
 $footicon:    #e42b68 !default;
+$bg-green:    #009688 !default;
+$gradient-green: #b9ff67 !default;
+$true-black:  #000000 !default;
+$info-green:  #b9ff676e !default;
 
-.text-danger-gradient {
+.text-lime-gradient {
   -webkit-text-fill-color: transparent!important;
-  background: linear-gradient(-107deg,#ffae89,#ff0055) !important;
+  background: linear-gradient(-107deg,#009688,#b9ff67 ) !important;
   -webkit-background-clip: text !important;
-  color: #ff0055 !important;
-  display: inline !important;
+  color: #b9ff67  !important;
+  display:   inline-flex  !important;
 }
 
-.btn-danger {
+.btn-lime-gradient {
   
-  background: linear-gradient(-107deg,#82009f,#f7345e);
-  color: #f7345e;
-  display: inline-block;
-  position: relative;
+  background: linear-gradient(-107deg,#009688,#b9ff67) !important;
+  color: #000000 !important;
+  display: inline-block !important;
+  position: relative !important;
+  border-color: #cbff8f !important;
+}
+
+.btn-lime {
+  
+  background: linear-gradient(-107deg,#b9ff67,#b9ff67) !important;
+  color: #000000 !important;
+  display: inline-block !important;
+  position: relative !important;
+  border-color: #cbff8f !important;
+}
+
+.shadow-lime-xlg, 
+.shadow-lime-xlg-hover:hover {
+  box-shadow: rgba(76, 175, 80, 0.50) 0 20px 40px 0 !important;
 }
 
 
@@ -66,7 +85,11 @@ $theme-colors: map-merge(
     "purple":       $purple,
     "pink":         $pink,
     "lightgreen":   $green-2,
-    "hotpink": $footicon,
+    "hotpink":      $footicon,
+    "seagreen":      $bg-green,
+    "seafoam" :     $info-green,
+    "lime":         $gradient-green,
+    "black":        $true-black,
   ),
   $theme-colors
 );

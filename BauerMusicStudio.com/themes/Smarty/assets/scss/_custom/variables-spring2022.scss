@@ -36,14 +36,15 @@ $true-black:  #000000 !default;
 $info-green:  #b9ff676e !default;
 
 
-.text-safariorange{
-@include gradient-generate(#ff6600, 45%);
--webkit-text-fill-color: transparent!important;
-  -webkit-background-clip: text !important;
-  color: #ff6600 !important;
-  display:   inline-block  !important;
-  position: relative !important;
-}
+//example was used to teach us how to use mixins for vendor prefix//
+// .text-safariorange{
+// @include gradient-generate(#ff6600, 45%);
+// -webkit-text-fill-color: transparent!important;
+//   -webkit-background-clip: text !important;
+//   color: #ff6600 !important;
+//   display:   inline-block  !important;
+//   position: relative !important;
+// }
 
 
 .text-lime-gradient {

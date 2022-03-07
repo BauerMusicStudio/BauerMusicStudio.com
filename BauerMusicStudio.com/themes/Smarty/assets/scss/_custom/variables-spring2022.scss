@@ -41,7 +41,8 @@ $info-green:  #b9ff676e !default;
 -webkit-text-fill-color: transparent!important;
   -webkit-background-clip: text !important;
   color: #ff6600 !important;
-  display:   inline-flex  !important;
+  display:   inline-block  !important;
+  position: relative !important;
 }
 
 
@@ -50,7 +51,8 @@ $info-green:  #b9ff676e !default;
   background: linear-gradient(-107deg,#009688,#b9ff67 ) !important;
   -webkit-background-clip: text !important;
   color: #b9ff67  !important;
-  display:   inline-flex  !important;
+  display:   inline-block  !important;
+  position: relative !important;
 }
 
 .btn-lime-gradient {

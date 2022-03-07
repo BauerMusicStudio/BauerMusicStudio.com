@@ -35,6 +35,16 @@ $gradient-green: #b9ff67 !default;
 $true-black:  #000000 !default;
 $info-green:  #b9ff676e !default;
 
+
+.text-safariorange{
+@include gradient-generate(#ff6600, 45%);
+-webkit-text-fill-color: transparent!important;
+  -webkit-background-clip: text !important;
+  color: #ff6600 !important;
+  display:   inline-flex  !important;
+}
+
+
 .text-lime-gradient {
   -webkit-text-fill-color: transparent!important;
   background: linear-gradient(-107deg,#009688,#b9ff67 ) !important;

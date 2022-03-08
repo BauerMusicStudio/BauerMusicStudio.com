@@ -68,6 +68,11 @@ body.header-over:not(.user-scrolled-down){
 }
 
 
+//Safari phone number issue//
+a[href^=tel]{
+    color: inherit;
+    text-decoration: none;
+}
 
 
 @media only screen and (max-width: 991px)

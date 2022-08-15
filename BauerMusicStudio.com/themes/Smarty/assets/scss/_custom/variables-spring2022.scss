@@ -4,7 +4,7 @@
 // 					coolors color 
 // 					https://coolors.co/2e2e2e-dbe1e6-2e6bdc-eac435-e40066-da4167-fb4d3d
 // -------------------------------------------------------------------------------------------
-$primary-theme-color:                       #5182b9 !default;                                       // #377dff - blue, default theme color
+$primary-theme-color:                       #4381cd !default;                                       // #377dff - blue, default theme color
 
 // If `$primary-theme-color` is changed, contrast might also need adjustment. Edit these two lines below.
 $yiq-text-dark:                             #212529 !default;                                       // colors, accordong to theme color!
@@ -30,10 +30,57 @@ $orange:      #C1630B !default;
 $off-white:   #e4e4e4 !default;
 $white:       #fff    !default;
 $footicon:    #e42b68 !default;
-$bg-green:    #009688 !default;
+
+
+$bg-green:    #f1f1f1 !default;
+//Lime theme $bg-green:    #009688 !default;
 $gradient-green: #b9ff67 !default;
+//Lime theme $gradient-green: #b9ff67 !default;
 $true-black:  #000000 !default;
+//Lime theme $info-green:  #b9ff676e !default;
 $info-green:  #b9ff676e !default;
+
+
+.text-lime-gradient {
+  -webkit-text-fill-color: transparent!important;
+  background: linear-gradient(-107deg,#0035d7,#67d9ff ) !important;
+  -webkit-background-clip: text !important;
+  color: #67d9ff  !important;
+  display:   inline-block  !important;
+  position: relative !important;
+}
+
+.btn-lime-gradient {
+  
+  background: linear-gradient(-107deg,#4381cd,#67d9ff) !important;
+  color: #fff !important;
+  display: inline-block !important;
+  position: relative !important;
+  border-color: #4381cdc7 !important;
+}
+
+.btn-lime {
+  
+  background: linear-gradient(-107deg,#4381cd,#4381cd) !important;
+  color: #fff !important;
+  display: inline-block !important;
+  position: relative !important;
+  border-color: #4381cdc7 !important;
+}
+
+.shadow-lime-xlg, 
+.shadow-lime-xlg-hover:hover {
+  box-shadow: rgb(255, 255, 255) 0 20px 40px 0 !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 //example was used to teach us how to use mixins for vendor prefix//
@@ -47,37 +94,37 @@ $info-green:  #b9ff676e !default;
 // }
 
 
-.text-lime-gradient {
-  -webkit-text-fill-color: transparent!important;
-  background: linear-gradient(-107deg,#009688,#b9ff67 ) !important;
-  -webkit-background-clip: text !important;
-  color: #b9ff67  !important;
-  display:   inline-block  !important;
-  position: relative !important;
-}
+// .text-lime-gradient {
+//   -webkit-text-fill-color: transparent!important;
+//   background: linear-gradient(-107deg,#009688,#b9ff67 ) !important;
+//   -webkit-background-clip: text !important;
+//   color: #b9ff67  !important;
+//   display:   inline-block  !important;
+//   position: relative !important;
+// }
 
-.btn-lime-gradient {
+// .btn-lime-gradient {
   
-  background: linear-gradient(-107deg,#009688,#b9ff67) !important;
-  color: #000000 !important;
-  display: inline-block !important;
-  position: relative !important;
-  border-color: #cbff8f !important;
-}
+//   background: linear-gradient(-107deg,#009688,#b9ff67) !important;
+//   color: #000000 !important;
+//   display: inline-block !important;
+//   position: relative !important;
+//   border-color: #cbff8f !important;
+// }
 
-.btn-lime {
+// .btn-lime {
   
-  background: linear-gradient(-107deg,#b9ff67,#b9ff67) !important;
-  color: #000000 !important;
-  display: inline-block !important;
-  position: relative !important;
-  border-color: #cbff8f !important;
-}
+//   background: linear-gradient(-107deg,#b9ff67,#b9ff67) !important;
+//   color: #000000 !important;
+//   display: inline-block !important;
+//   position: relative !important;
+//   border-color: #cbff8f !important;
+// }
 
-.shadow-lime-xlg, 
-.shadow-lime-xlg-hover:hover {
-  box-shadow: rgba(76, 175, 80, 0.50) 0 20px 40px 0 !important;
-}
+// .shadow-lime-xlg, 
+// .shadow-lime-xlg-hover:hover {
+//   box-shadow: rgba(76, 175, 80, 0.50) 0 20px 40px 0 !important;
+// }
 
 
 // Theme Colors (buttons are also generated from here)
